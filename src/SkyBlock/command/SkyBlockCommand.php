@@ -24,7 +24,7 @@ class SkyBlockCommand extends Command {
         parent::__construct("skyblock", "Main SkyBlock command", "Usage: /skyblock", ["sb"]);
     }
     public function sendMessage(Player $sender, $message) {
-        $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlock" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
+        $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
     }
     public function execute(CommandSender $sender, $commandLabel, array $args) {
         if($sender instanceof Player) {
