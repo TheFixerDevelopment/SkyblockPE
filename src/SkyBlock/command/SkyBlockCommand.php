@@ -565,12 +565,13 @@ class SkyBlockCommand extends Command {
                             "home" => "Teleport you to your island home",
                             "members" => "Show all members of your island",
                             "tp <ownerName>" => "Teleport you to a island that isn't yours",
+			    "optp <ownerName>" => "Teleport you to any island whether is locked or not",
                             "invite" => "Invite a player to be member of your island",
                             "accept/reject <sender name>" => "Accept/reject an invitation",
                             "leave" => "Leave your island",
                             "remove" => "Remove your island",
                             "makeleader" => "Transfer island ownership",
-							"version" => "Get Skyblock version"
+			    "version" => "Get Skyblock version"
                         ];
                         foreach($commands as $command => $description) {
                             $sender->sendMessage(TextFormat::GREEN . "/skyblock {$command}: " . TextFormat::WHITE . $description);
