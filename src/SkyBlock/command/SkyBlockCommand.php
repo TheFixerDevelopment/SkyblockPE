@@ -38,10 +38,11 @@ class SkyBlockCommand extends Command {
             if(isset($args[0])) {
                 switch($args[0]) {
                     case "join":
+			if ($sender->hasPermission('sbpe.cmd.join')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You haven't a island!");
-                        }
+			}
                         else {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
                             if($island instanceof Island) {
@@ -51,10 +52,12 @@ class SkyBlockCommand extends Command {
                             }
                             else {
                                 $this->sendMessage($sender, "You haven't a island!!");
-                            }
-                        }
+                          	  }
+                      	     }
+			}
                         break;
                     case "create":
+			if ($sender->hasPermission('sbpe.cmd.create')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $reset = $this->plugin->getResetHandler()->getResetTimer($sender);
@@ -81,9 +84,11 @@ class SkyBlockCommand extends Command {
                         }
                         else {
                             $this->sendMessage($sender, "You already got a skyblock island!");
-                        }
+                       	 }
+			}
                         break;
                     case "home":
+				if ($sender->hasPermission('sbpe.cmd.home')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You haven't a island!");
@@ -104,8 +109,10 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "You haven't a island!!");
                             }
                         }
+				}
                         break;
                     case "sethome":
+				if ($sender->hasPermission('sbpe.cmd.sethome')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You haven't a island!");
@@ -130,9 +137,11 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "You haven't a island!!");
                             }
                         }
+				}
                         break;
                     case "kick":
                     case "expel":
+				if ($sender->hasPermission('sbpe.cmd.kick')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You haven't a island!");
@@ -168,8 +177,10 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "You haven't a island!");
                             }
                         }
+				}
                         break;
                     case "lock":
+				if ($sender->hasPermission('sbpe.cmd.lock')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You haven't a island!");
@@ -190,8 +201,10 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "You haven't a island!");
                             }
                         }
+				}
                         break;
                     case "invite":
+				if ($sender->hasPermission('sbpe.cmd.invite')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You haven't a island!");
@@ -229,8 +242,10 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "You haven't a island!!");
                             }
                         }
+				}
                         break;
                     case "accept":
+				if ($sender->hasPermission('sbpe.cmd.invite.accept')) {
                         if(isset($args[1])) {
                             $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                             if(empty($config->get("island"))) {
@@ -260,9 +275,11 @@ class SkyBlockCommand extends Command {
                         else {
                             $this->sendMessage($sender, "Usage: /skyblock accept <sender name>");
                         }
+				}
                         break;
                     case "deny":
                     case "reject":
+				if ($sender->hasPermission('sbpe.cmd.invite.deny')) {
                         if(isset($args[1])) {
                             $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                             if(empty($config->get("island"))) {
@@ -292,8 +309,10 @@ class SkyBlockCommand extends Command {
                         else {
                             $this->sendMessage($sender, "Usage: /skyblock accept <sender name>");
                         }
+				}
                         break;
                     case "members":
+				if ($sender->hasPermission('sbpe.cmd.members')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You must be in a island to use this command!");
@@ -312,8 +331,10 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "You must be in a island to use this command!!");
                             }
                         }
+				}
                         break;
                     case "disband":
+				if ($sender->hasPermission('sbpe.cmd.disband')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You must be in a island to disband it!");
@@ -339,8 +360,11 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "You must be in a island to disband it!!");
                             }
                         }
+				}
                         break;
                     case "makeleader":
+		    case "newleader":
+				if ($sender->hasPermission('sbpe.cmd.makeleader')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You must be in a island to set a new leader!");
@@ -380,8 +404,10 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "You must be in a island to set a new leader!!");
                             }
                         }
+				}
                         break;
                     case "leave":
+				if ($sender->hasPermission('sbpe.cmd.leave')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You must be in a island to leave it!");
@@ -404,8 +430,10 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "You must be in a island to leave it!!");
                             }
                         }
+				}
                         break;
                     case "remove":
+				if ($sender->hasPermission('sbpe.cmd.remove')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You must be in a island to leave it!");
@@ -439,8 +467,28 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "You must be in a island to leave it!!");
                             }
                         }
+				}
                         break;
+                    case "optp":
+				if ($sender->hasPermission('sbpe.cmd.optp')) {
+                        if(isset($args[1])) {
+                            $island = $this->plugin->getIslandManager()->getIslandByOwner($args[1]);
+                            if($island instanceof Island) {
+                                    $sender->teleport(new Position(15, 7, 10, $this->plugin->getServer()->getLevelByName($island->getIdentifier())));
+                                    $this->sendMessage($sender, "You joined the island successfully");
+                                }
+                            }
+                            else {
+                                $this->sendMessage($sender, "You cant teleport to an island if no members are online.");
+                            }
+                        }
+                        else {
+                            $this->sendMessage($sender, "Usage: /skyblock optp <owner name>");
+                        }
+				}
+                        break;				
                     case "tp":
+				if ($sender->hasPermission('sbpe.cmd.tp')) {
                         if(isset($args[1])) {
                             $island = $this->plugin->getIslandManager()->getIslandByOwner($args[1]);
                             if($island instanceof Island) {
@@ -459,8 +507,10 @@ class SkyBlockCommand extends Command {
                         else {
                             $this->sendMessage($sender, "Usage: /skyblock tp <owner name>");
                         }
+				}
                         break;
                     case "reset":
+				if ($sender->hasPermission('sbpe.cmd.reset')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "You must be in a island to reset it!");
@@ -495,10 +545,16 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "You must be in a island to reset it!!");
                             }
                         }
+				}
                         break;
-					case "version":
-						$this->sendMessage($sender, "SkyblockPE by xXSirButterXx/xXSirGamesXx, original Author: GiantAmethyst.");
+			case "version":
+			case "ver":	
+				if ($sender->hasPermission('sbpe.cmd.ver')) {
+				$this->sendMessage($sender, "SkyblockPE by xXSirButterXx/xXSirGamesXx, original Author: GiantAmethyst.");
+				}
+				break;
                     case "help":
+				if ($sender->hasPermission('sbpe.cmd.home')) {
                         $commands = [
                             "help" => "Show skyblock command info",
                             "create" => "Create a new island",
@@ -523,6 +579,7 @@ class SkyBlockCommand extends Command {
 
                     default:
                         $this->sendMessage($sender, "Use /skyblock help if you don't know how to use the command!");
+					
                         break;
                 }
             }
