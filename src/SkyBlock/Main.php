@@ -10,6 +10,7 @@ use SkyBlock\invitation\InvitationHandler;
 use SkyBlock\island\IslandManager;
 use SkyBlock\reset\ResetHandler;
 use SkyBlock\skyblock\SkyBlockManager;
+use pocketmine\utils\TextFormat;
 
 class Main extends PluginBase {
 
@@ -54,11 +55,11 @@ class Main extends PluginBase {
         $this->setResetHandler();
         $this->setPluginHearbeat();
         $this->registerCommand();
-        $this->getLogger()->info(TextFormat::GREEN . "[SkyBlockPE]" . TextFormat::WHITE . "SkyBlock by xXSirGamesXx was enabled.");
+        $this->getLogger()->info(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "Skyblock by xXSirGamesXx has been Enabled");
     }
 
     public function onDisable() {
-        $this->getLogger()->info(TextFormat::GREEN . "[SkyBlockPE]" . TextFormat::WHITE . "SkyBlock by xXSirGamesXx was enabled.");
+        $this->getLogger()->info(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "Skyblock by xXSirGamesXx has been Disabled");
     }
 
     /**
