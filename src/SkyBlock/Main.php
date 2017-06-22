@@ -54,11 +54,11 @@ class Main extends PluginBase {
         $this->setResetHandler();
         $this->setPluginHearbeat();
         $this->registerCommand();
-        $this->getLogger()->info("SkyBlock by @GiantAmethyst was enabled.");
+        $this->getLogger()->info(TextFormat::GREEN . "[SkyBlockPE]" . TextFormat::WHITE . "SkyBlock by xXSirGamesXx was enabled.");
     }
 
     public function onDisable() {
-        $this->getLogger()->info("SkyBlock by @GiantAmethyst was disabled.");
+        $this->getLogger()->info(TextFormat::GREEN . "[SkyBlockPE]" . TextFormat::WHITE . "SkyBlock by xXSirGamesXx was enabled.");
     }
 
     /**
