@@ -30,7 +30,7 @@ class SkyBlockCommand extends Command {
     }
 
     public function sendMessage(Player $sender, $message) {
-        $sender->sendMessage(TextFormat::GREEN . "- " . TextFormat::WHITE . $message);
+        $sender->sendMessage(TextFormat::GREEN . "[SkyBlock] " . TextFormat::WHITE . $message);
     }
 
     public function execute(CommandSender $sender, $commandLabel, array $args) {
@@ -496,9 +496,11 @@ class SkyBlockCommand extends Command {
                             }
                         }
                         break;
-                    case "info":
+					case "version":
+						$this->sendMessage($sender, "SkyblockPE by xXSirButterXx/xXSirGamesXx, original Author: GiantAmethyst.");
+                    case "help":
                         $commands = [
-                            "info" => "Show skyblock command info",
+                            "help" => "Show skyblock command info",
                             "create" => "Create a new island",
                             "join" => "Teleport you to your island",
                             "expel" => "Kick someone from your island",
@@ -512,45 +514,24 @@ class SkyBlockCommand extends Command {
                             "leave" => "Leave your island",
                             "remove" => "Remove your island",
                             "makeleader" => "Transfer island ownership",
-                            "teamchat" => "Change your chat to your island chat"
+							"version" => "Get Skyblock version"
                         ];
                         foreach($commands as $command => $description) {
-                            $sender->sendMessage(TextFormat::RED . "/skyblock {$command}: " . TextFormat::YELLOW . $description);
+                            $sender->sendMessage(TextFormat::GREEN . "/skyblock {$command}: " . TextFormat::WHITE . $description);
                         }
                         break;
-                    case "teamchat":
-                        if($this->plugin->getChatHandler()->isInChat($sender)) {
-                            $this->plugin->getChatHandler()->removePlayerFromChat($sender);
-                            $this->sendMessage($sender, "You successfully left your team chat!");
-                        }
-                        else {
-                            $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
-                            if(empty($config->get("island"))) {
-                                $this->sendMessage($sender, "You must be in a island to use this command!");
-                            }
-                            else {
-                                $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
-                                if($island instanceof Island) {
-                                    $this->plugin->getChatHandler()->addPlayerToChat($sender, $island);
-                                    $this->sendMessage($sender, "You joined your team chat room");
-                                }
-                                else {
-                                    $this->sendMessage($sender, "You must be in a island to use this command!!");
-                                }
-                            }
-                        }
-                        break;
+
                     default:
-                        $this->sendMessage($sender, "Use /skyblock info if you don't know how to use the command!");
+                        $this->sendMessage($sender, "Use /skyblock help if you don't know how to use the command!");
                         break;
                 }
             }
             else {
-                $this->sendMessage($sender, "Use /skyblock info if you don't know how to use the command!");
+                $this->sendMessage($sender, "Use /skyblock help if you don't know how to use the command!");
             }
         }
         else {
-            $sender->sendMessage("Please, run this command in game.");
+            $sender->sendMessage("Please run this command in game.");
         }
     }
 
