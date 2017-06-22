@@ -24,7 +24,7 @@ class SkyBlockCommand extends Command {
         parent::__construct("skyblock", "Main SkyBlock command", "Usage: /skyblock", ["sb"]);
     }
     public function sendMessage(Player $sender, $message) {
-        $sender->sendMessage(TextFormat::GREEN . "[SkyBlock] " . TextFormat::WHITE . $message);
+        $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlock" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
     }
     public function execute(CommandSender $sender, $commandLabel, array $args) {
         if($sender instanceof Player) {
@@ -547,8 +547,10 @@ class SkyBlockCommand extends Command {
                             "makeleader" => "Transfer island ownership",
 							"version" => "Get Skyblock version"
                         ];
+						$sender->sendMessage(TextFormat::DARK_GREEN . "-----------" . TextFormat::BOLD . TextFormat::AQUA . " [" . TextFormat::GREEN . "SkyBlockPE Help" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "-----------"); 
                         foreach($commands as $command => $description) {
-                            $sender->sendMessage(TextFormat::GREEN . "/skyblock {$command}: " . TextFormat::WHITE . $description);
+			
+                            $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "/" . TextFormat::AQUA . "Skyblock {$command}: " . TextFormat::RESET . TextFormat::DARK_GREEN . $description);
                         }
                         break;
 				}
