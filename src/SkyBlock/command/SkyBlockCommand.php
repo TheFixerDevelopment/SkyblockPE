@@ -1,7 +1,5 @@
 <?php
-
 namespace SkyBlock\command;
-
 use SkyBlock\Utils;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -13,12 +11,9 @@ use SkyBlock\invitation\Invitation;
 use SkyBlock\island\Island;
 use SkyBlock\Main;
 use SkyBlock\reset\Reset;
-
 class SkyBlockCommand extends Command {
-
     /** @var Main */
     private $plugin;
-
     /**
      * SkyBlockCommand constructor.
      *
@@ -28,11 +23,9 @@ class SkyBlockCommand extends Command {
         $this->plugin = $plugin;
         parent::__construct("skyblock", "Main SkyBlock command", "Usage: /skyblock", ["sb"]);
     }
-
     public function sendMessage(Player $sender, $message) {
         $sender->sendMessage(TextFormat::GREEN . "[SkyBlock] " . TextFormat::WHITE . $message);
     }
-
     public function execute(CommandSender $sender, $commandLabel, array $args) {
         if($sender instanceof Player) {
             if(isset($args[0])) {
@@ -468,26 +461,8 @@ class SkyBlockCommand extends Command {
                             }
                         }
 				}
-                        break;
-                    case "optp":
-				if ($sender->hasPermission('sbpe.cmd.optp')) {
-                        if(isset($args[1])) {
-                            $island = $this->plugin->getIslandManager()->getIslandByOwner($args[1]);
-                            if($island instanceof Island) {
-                                    $sender->teleport(new Position(15, 7, 10, $this->plugin->getServer()->getLevelByName($island->getIdentifier())));
-                                    $this->sendMessage($sender, "You joined the island successfully");
-                                }
-                            }
-                            else {
-                                $this->sendMessage($sender, "You cant teleport to an island if no members are online.");
-                            }
-                        }
-                        else {
-                            $this->sendMessage($sender, "Usage: /skyblock optp <owner name>");
-                        }
-				}
-                        break;				
-                    case "tp":
+                        break;					
+						case "tp":
 				if ($sender->hasPermission('sbpe.cmd.tp')) {
                         if(isset($args[1])) {
                             $island = $this->plugin->getIslandManager()->getIslandByOwner($args[1]);
@@ -565,19 +540,18 @@ class SkyBlockCommand extends Command {
                             "home" => "Teleport you to your island home",
                             "members" => "Show all members of your island",
                             "tp <ownerName>" => "Teleport you to a island that isn't yours",
-			    "optp <ownerName>" => "Teleport you to any island whether is locked or not",
                             "invite" => "Invite a player to be member of your island",
                             "accept/reject <sender name>" => "Accept/reject an invitation",
                             "leave" => "Leave your island",
                             "remove" => "Remove your island",
                             "makeleader" => "Transfer island ownership",
-			    "version" => "Get Skyblock version"
+							"version" => "Get Skyblock version"
                         ];
                         foreach($commands as $command => $description) {
                             $sender->sendMessage(TextFormat::GREEN . "/skyblock {$command}: " . TextFormat::WHITE . $description);
                         }
                         break;
-
+				}
                     default:
                         $this->sendMessage($sender, "Use /skyblock help if you don't know how to use the command!");
 					
@@ -592,5 +566,4 @@ class SkyBlockCommand extends Command {
             $sender->sendMessage("Please run this command in game.");
         }
     }
-
 }
