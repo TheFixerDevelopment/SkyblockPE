@@ -21,11 +21,71 @@ commands:
   skyblock:
   description: SkyBlockPE commands
   aliases: ["sb", "skyblockpe"]
+  permission: sbpe
   
   
 permissions:
-  skyblock:
+  sbpe:
   default: true
   description: /sb <args..>
+    children:
+      sbpe.cmd.join:
+        default: true
+        description: Join your island.
+       sbpe.cmd.create:
+        default: true
+        description: Create an island.
+       sbpe.cmd.home:
+        default: true
+        description: Go to your island home.
+       sbpe.cmd.sethome
+        default: true
+        description: Sethome on your island if you have one
+       sbpe.cmd.kick:
+        default: true
+        description: Kick someone off of your island
+       sbpe.cmd.lock:
+        default: true
+        description: Lock peole from coming to your islnd.
+       sbpe.cmd.invite:
+        default: true
+        description:
+       sbpe.cmd.invite.accept:
+        default: true
+        description: Accept an invitation
+       sbpe.cmd.invite.deny:
+        default: true
+        description: Deny an invitation      
+       sbpe.cmd.members:
+        default: true
+        description: See all the members on your island
+       sbpe.cmd.disband:
+        default: true
+        description: Disband your island   
+       sbpe.cmd.makeleader:
+        default: true
+        description: Make someone else the leader
+       sbpe.cmd.leave:
+        default: true
+        description: Leave your island.
+       sbpe.cmd.remove:
+        default: true
+        description: Remove someoen
+       sbpe.cmd.tp:
+        default: op
+        description: Tp to an island
+       sbpe.cmd.reset:
+        default: true
+        description: Reset an island
+       sbpe.cmd.ver:
+        default: true
+        description: get sbpe version
+       sbpe.cmd.help
+        default: true
+        description: Get skyblock help
+        
+        
+        
+      
 
 
