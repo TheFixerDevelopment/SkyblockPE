@@ -17,3 +17,15 @@ api:
 - 3.0.0-ALPHA6
 - 3.0.0-ALPHA7
 
+commands:
+  skyblock:
+  description: SkyBlockPE commands
+  aliases: ["sb", "skyblockpe"]
+  
+  
+permissions:
+  skyblock:
+  default: true
+  description: /sb <args..>
+
+
