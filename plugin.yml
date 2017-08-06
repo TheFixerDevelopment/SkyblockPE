@@ -7,15 +7,16 @@
 #        \/      \_/        \/                  \/                       \/           \_/      \/
 #                                                                                                                                                                                  
 name: SkyBlockPE
-author: xXSirButterXx/xXSirGamesXx
-website: http://github.com/xXSirGamesXx
+author: xXSirButterXx/xXSirGamesXx, edited by Zeao.
+website: Not showing due to self-leak information.
 main: SkyBlock\Main
-version: "0.1.8"
+version: "0.1.9"
 api:
 - 3.0.0-ALPHA4
 - 3.0.0-ALPHA5
 - 3.0.0-ALPHA6
 - 3.0.0-ALPHA7
+- 3.0.1
 
 commands:
   island:
@@ -26,7 +27,7 @@ commands:
   
 permissions:
 sbpe:
-description: /is <args..>
+description: /sb <args..>
 default: true
 sbpe.cmd.join:
 description: Join your island.
@@ -79,11 +80,3 @@ default: true
 sbpe.cmd.ver:
 description: get sbpe version
 default: true
-
-
-        
-        
-        
-      
-
-
