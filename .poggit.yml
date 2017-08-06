@@ -1,6 +1,6 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/GiantAmethyst/SkyBlock
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/TheFixerDevelopment/SkyBlock
 branches:
-- master
+- patch-1
 projects:
   SkyBlock:
     path: ""
