@@ -18,15 +18,15 @@ api:
 - 3.0.0-ALPHA7
 
 commands:
-  skyblock:
+  island:
   description: SkyBlockPE commands
-  aliases: ["sb", "skyblockpe"]
+  aliases: ["is", "skyblock"]
   permission: sbpe
   
   
 permissions:
 sbpe:
-description: /sb <args..>
+description: /is <args..>
 default: true
 sbpe.cmd.join:
 description: Join your island.
@@ -44,7 +44,7 @@ sbpe.cmd.kick:
 description: Kick someone off of your island
 default: true
 sbpe.cmd.lock:
-description: Lock peole from coming to your islnd.
+description: Lock people from coming to your islnd.
 default: true
 sbpe.cmd.invite:
 description: Invite someone
