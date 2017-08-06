@@ -19,9 +19,9 @@ api:
 - 3.0.1
 
 commands:
-  island:
+  skyblockpe:
   description: SkyBlockPE commands
-  aliases: ["is", "skyblock"]
+  aliases: ["sb", "skyblock"]
   permission: sbpe
   
   
