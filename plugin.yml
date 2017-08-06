@@ -19,9 +19,9 @@ api:
 - 3.0.1
 
 commands:
-  skyblockpe:
+  skyblock:
   description: SkyBlockPE commands
-  aliases: ["sb", "skyblock"]
+  aliases: ["sb", "skyblockpe"]
   permission: sbpe
   
   
@@ -80,3 +80,9 @@ default: true
 sbpe.cmd.ver:
 description: get sbpe version
 default: true
+
+
+
+
+
+
