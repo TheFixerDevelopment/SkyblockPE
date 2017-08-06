@@ -18,12 +18,12 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 ## TO-DO LIST:
 
-* Updating /sb, with different colors, and liking's. Especially with /sb help.## ✖
+* Updating /sb, with different colors, and liking's. Especially with /sb help. ✖
 
-* When using /sb, it will instantly give the help information page. ## ✖
+* When using /sb, it will instantly give the help information page. ✖
 
-* Add new commands: /island, and /is ## ✖
+* Add new commands: /island, and /is ✖
 
-* Add alises to each command on the help page. ## ✖
+* Add alises to each command on the help page. ✖
 
 Thank you, and will be keeping you all up to date on news.
