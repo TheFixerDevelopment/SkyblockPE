@@ -9,7 +9,7 @@ You can download it [Here](https://github.com/TheFixerDevelopment/SkyblockPE/rel
 
 ## FOR DEVELOPERS
 
-You can change SkyBlockCommands.php here:
+You can change SkyBlockCommand.php here:
 https://github.com/TheFixerDevelopment/SkyblockPE/blob/patch-1/src/SkyBlock/command/SkyBlockCommand.php
 On line 528, where the message comes in, saying an actual message.
 Change it to your liking. But do not change anything else, unless you're a professional coder, and want to change a few things.
