@@ -525,7 +525,7 @@ class SkyBlockCommand extends Command {
 			case "version":
 			case "ver":	
 				if ($sender->hasPermission('sbpe.cmd.ver') or $sender->hasPermission('sbpe')) {
-				$this->sendMessage($sender, "SkyblockPE by xXSirButterXx/xXSirGamesXx, original Author: GiantAmethyst.");
+				$this->sendMessage($sender, "§cNot showing infomation due to self-leak plugin.");
 				}
 				break;
                     case "help":
@@ -543,8 +543,9 @@ class SkyBlockCommand extends Command {
                             "invite" => "Invite a player to be member of your island",
                             "accept/reject <sender name>" => "Accept/reject an invitation",
                             "leave" => "Leave your island",
-                            "remove" => "Remove your island",
+                            "disband" => "Remove your island",
                             "makeleader" => "Transfer island ownership",
+			    
 							"version" => "Get Skyblock version"
                         ];
 						$sender->sendMessage(TextFormat::DARK_GREEN . "-----------" . TextFormat::BOLD . TextFormat::AQUA . " [" . TextFormat::GREEN . "SkyBlockPE Help" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "-----------"); 
@@ -555,17 +556,17 @@ class SkyBlockCommand extends Command {
                         break;
 				}
                     default:
-                        $this->sendMessage($sender, "Use /skyblock help if you don't know how to use the command!");
+                        $this->sendMessage($sender, "Use /sb help for a list of skyblock commands.");
 					
                         break;
                 }
             }
             else {
-                $this->sendMessage($sender, "Use /skyblock help if you don't know how to use the command!");
+                $this->sendMessage($sender, "Use /sb help for a list of skyblock commands.");
             }
         }
         else {
-            $sender->sendMessage("Please run this command in game.");
+            $sender->sendMessage("Please run this command in game, not via console.");
         }
     }
 }
