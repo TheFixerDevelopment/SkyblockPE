@@ -55,7 +55,7 @@ class Main extends PluginBase {
         $this->setResetHandler();
         $this->setPluginHearbeat();
         $this->registerCommand();
-        $this->getLogger()->info(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "Skyblock by xXSirGamesXx has been Enabled");
+        $this->getLogger()->info(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "Skyblock by xXSirGamesXx has been Enabled. You're using the forks / Spoons ONLY branch. This will not work on Pocketmine.");
     }
 
     public function onDisable() {
