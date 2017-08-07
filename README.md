@@ -4,7 +4,7 @@ SkyBlock for PocketMine servers only. (Download this plugin for Forks / Spoon se
 ### Contributions
 You are free to contribute to this project, any kind of help is accepted.
 ### Where I can download it?
-Download link for Github coming soon, but you can download it on poggit [Here (https://poggit.pmmp.io/ci/TheFixerDevelopment/SkyblockPE/SkyBlock).
+Download link for Github coming soon, but you can download it on poggit [Here] (https://poggit.pmmp.io/ci/TheFixerDevelopment/SkyblockPE/SkyBlock).
 
 
 
