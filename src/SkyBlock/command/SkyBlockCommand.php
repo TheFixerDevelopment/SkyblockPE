@@ -558,7 +558,7 @@ class SkyBlockCommand extends Command {
                         break;
 				}
                     default:
-                        $this->sendMessage($sender, "§2Use /sb help for a list of skyblock commands.");
+                        $this->sendMessage($sender, "§cUnknown command. §dUse §5/sb help §dfor a list of skyblock commands.");
 					
                         break;
                 }
@@ -568,7 +568,7 @@ class SkyBlockCommand extends Command {
             }
         }
         else {
-            $sender->sendMessage("Please run this command in game, not via console.");
+            $sender->sendMessage("Please run this command in game, not on console.");
         }
     }
 }
