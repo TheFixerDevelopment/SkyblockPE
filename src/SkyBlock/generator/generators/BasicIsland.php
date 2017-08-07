@@ -89,7 +89,7 @@ class BasicIsland extends SkyBlockGenerator {
      *
      * @return Vector3
      */
-    public function getSpawn() : Vector3; {
+    public function getSpawn() {
         return new Vector3(8, 7, 10);
     }
 
