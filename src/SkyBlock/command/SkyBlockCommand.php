@@ -34,7 +34,7 @@ class SkyBlockCommand extends Command {
 			if ($sender->hasPermission('sbpe.cmd.join') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
-                            $this->sendMessage($sender, "§4[Error] §cYou Dont have an island!");
+                            $this->sendMessage($sender, "§4[Error] §cYou Don't have an island!");
 			}
                         else {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
@@ -44,7 +44,7 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "§aYou were teleported to your island home succesfully");
                             }
                             else {
-                                $this->sendMessage($sender, "§4[Error] §cYou Dont have an island!!");
+                                $this->sendMessage($sender, "§4[Error] §cYou Don't have an island!!");
                           	  }
                       	     }
 			}
@@ -84,7 +84,7 @@ class SkyBlockCommand extends Command {
 				if ($sender->hasPermission('sbpe.cmd.home') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
-                            $this->sendMessage($sender, "§4[Error] §cYou Dont have an island");
+                            $this->sendMessage($sender, "§4[Error] §cYou Don't have an island");
                         }
                         else {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
@@ -99,7 +99,7 @@ class SkyBlockCommand extends Command {
                                 }
                             }
                             else {
-                                $this->sendMessage($sender, "§4[Error] §cYou Dont have an island!");
+                                $this->sendMessage($sender, "§4[Error] §cYou Don't have an island!");
                             }
                         }
 				}
@@ -108,7 +108,7 @@ class SkyBlockCommand extends Command {
 				if ($sender->hasPermission('sbpe.cmd.sethome') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
-                            $this->sendMessage($sender, "§4[Error] §cYou Dont have an island");
+                            $this->sendMessage($sender, "§4[Error] §cYou Don't have an island");
                         }
                         else {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
@@ -127,7 +127,7 @@ class SkyBlockCommand extends Command {
                                 }
                             }
                             else {
-                                $this->sendMessage($sender, "§4[Error] §cYou Dont have an island");
+                                $this->sendMessage($sender, "§4[Error] §cYou Don't have an island");
                             }
                         }
 				}
@@ -137,7 +137,7 @@ class SkyBlockCommand extends Command {
 				if ($sender->hasPermission('sbpe.cmd.kick') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
-                            $this->sendMessage($sender, "§4[Error] §cYou Dont have an island");
+                            $this->sendMessage($sender, "§4[Error] §cYou Don't have an island");
                         }
                         else {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
@@ -167,7 +167,7 @@ class SkyBlockCommand extends Command {
                                 }
                             }
                             else {
-                                $this->sendMessage($sender, "§4[Error] §cYou Dont have an island");
+                                $this->sendMessage($sender, "§4[Error] §cYou Don't have an island");
                             }
                         }
 				}
@@ -176,7 +176,7 @@ class SkyBlockCommand extends Command {
 				if ($sender->hasPermission('sbpe.cmd.lock') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
-                            $this->sendMessage($sender, "§4[Error] §cYou Dont have an island");
+                            $this->sendMessage($sender, "§4[Error] §cYou Don't have an island");
                         }
                         else {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
@@ -200,7 +200,7 @@ class SkyBlockCommand extends Command {
 				if ($sender->hasPermission('sbpe.cmd.invite') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
-                            $this->sendMessage($sender, "§4[Error] §cYou Dont have an island");
+                            $this->sendMessage($sender, "§4[Error] §cYou Don't have an island");
                         }
                         else {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
@@ -232,7 +232,7 @@ class SkyBlockCommand extends Command {
                                 }
                             }
                             else {
-                                $this->sendMessage($sender, "§4[Error] §cYou Dont have an island");
+                                $this->sendMessage($sender, "§4[Error] §cYou Don't have an island");
                             }
                         }
 				}
@@ -374,7 +374,7 @@ class SkyBlockCommand extends Command {
                                             if($island == $playerIsland) {
                                                 $island->setOwnerName($player);
                                                 $island->addPlayer($player);
-                                                $this->sendMessage($sender, "§aYou set the ownership to §2{$player->getName()} §asuccesfully!");
+                                                $this->sendMessage($sender, "§aYou have set the ownership to §2{$player->getName()} §asuccesfully!");
                                                 $this->sendMessage($player, "§aYou are now the Ownership of your island, by §2{$sender->getName()}");
                                             }
                                             else {
