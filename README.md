@@ -28,4 +28,24 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * Add alises to each command on the help page. ✖
 
+
+## COMPATIBLE SERVER SOFTWARE'S FOR THIS PLUGIN:
+
+* PocketMine-MP - Tested and working.
+
+* GenisysPro - Tested and working.
+
+* Tesseract - Not tested. You can test it yourself and tell us if it works or not.
+
+* ClearSky - Not tested. You can test it yourself and tell us if it works or not.
+
+
+## COMPATIBLE MCPE VERSIONS FOR THIS PLUGIN:
+
+* MCPE V1.2.x - Not tested = Not working.
+
+* MCPE V1.1.x - Working.
+
+* MCPE V1.0.x - Not tested.
+
 Thank you, and will be keeping you all up to date on news.
