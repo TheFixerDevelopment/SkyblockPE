@@ -3,7 +3,7 @@ SkyBlock for PocketMine servers only.
 ### Contributions
 You are free to contribute to this project, any kind of help is accepted.
 ### Where I can download it?
-You can download it [Here](https://github.com/TheFixerDevelopment/SkyblockPE/releases/tag/v0.2.0), or Download this on poggit [Here](https://poggit.pmmp.io/ci/TheFixerDevelopment/SkyblockPE/SkyBlock).
+Download link for Github coming soon, but you can download it on poggit [Here (https://poggit.pmmp.io/ci/TheFixerDevelopment/SkyblockPE/SkyBlock).
 
 
 
@@ -33,7 +33,7 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * PocketMine-MP - Tested and working.
 
-* GenisysPro - Tested and working. (Use the patch-1 branch for this to work.)
+* GenisysPro - Tested and working. (Use this branch for forks / Spoons ONLY [Here](https://github.com/TheFixerDevelopment/SkyblockPE)
 
 * Tesseract - Not tested. You can test it yourself and tell us if it works or not.
 
