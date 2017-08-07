@@ -55,7 +55,7 @@ class Main extends PluginBase {
         $this->setResetHandler();
         $this->setPluginHearbeat();
         $this->registerCommand();
-        $this->getLogger()->info(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "Skyblock by Zeao has been Enabled");
+        $this->getLogger()->info(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "Skyblock by Zeao has been Enabled You are using the POCKETMINE-ONLY Branch. This will not work with forks / Spoons");
     }
 
     public function onDisable() {
