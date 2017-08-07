@@ -50,11 +50,11 @@ class BasicIsland extends SkyBlockGenerator {
      *
      * @return string
      */
-    public function getName() : string; {
+    public function getName(){
         return $this->name;
     }
 
-    public function getSettings() : array; {
+    public function getSettings(){
         return $this->settings;
     }
 
@@ -89,7 +89,7 @@ class BasicIsland extends SkyBlockGenerator {
      *
      * @return Vector3
      */
-    public function getSpawn() {
+    public function getSpawn(){
         return new Vector3(8, 7, 10);
     }
 
