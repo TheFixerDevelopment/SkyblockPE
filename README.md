@@ -34,11 +34,11 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * PocketMine-MP - Tested and working.
 
-* GenisysPro - Tested and working. (Use this branch for forks / Spoons ONLY [Here](https://github.com/TheFixerDevelopment/SkyblockPE)
+* GenisysPro - Tested and working. (Use this branch for Spoons ONLY [Here](https://github.com/TheFixerDevelopment/SkyblockPE)
 
-* Tesseract - Not tested. You can test it yourself and tell us if it works or not.
+* Tesseract - Tested and working (Use this branch for Spoons ONLY [Here](https://github.com/TheFixerDevelopment/SkyblockPE)
 
-* ClearSky - Not tested. You can test it yourself and tell us if it works or not.
+* ClearSky - Tested and working. (Use this branch for Spoons ONLY [Here](https://github.com/TheFixerDevelopment/SkyblockPE)
 
 
 ## COMPATIBLE MCPE VERSIONS FOR THIS PLUGIN:
