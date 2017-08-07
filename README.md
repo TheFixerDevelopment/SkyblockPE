@@ -34,11 +34,11 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * PocketMine-MP - Tested and working. (Use this branch [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/Pocketmine-ONLY)
 
-* GenisysPro - Tested and working.
+* GenisysPro - Tested and working. (Using this branch)
 
-* Tesseract - Not tested. You can test it yourself and tell us if it works or not.
+* Tesseract - Tested and working (Using this branch)
 
-* ClearSky - Not tested. You can test it yourself and tell us if it works or not.
+* ClearSky - Tested and working (Using this branch)
 
 
 ## COMPATIBLE MCPE VERSIONS FOR THIS PLUGIN:
