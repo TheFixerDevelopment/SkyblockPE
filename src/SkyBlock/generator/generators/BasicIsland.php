@@ -79,7 +79,7 @@ class BasicIsland extends SkyBlockGenerator {
         }
     }
 
-    public function populateChunk($chunkX, $chunkZ) {
+    public function populateChunk(int $chunkX, int $chunkZ) {
         //TODO: Set Biome ID?
         return;
     }
