@@ -1,5 +1,6 @@
 # SkyBlockPE
-SkyBlock for PocketMine servers only. 
+SkyBlock for PocketMine servers only. (Download this plugin for Forks / Spoon servers only [Here](https://github.com/TheFixerDevelopment/SkyblockPE)
+
 ### Contributions
 You are free to contribute to this project, any kind of help is accepted.
 ### Where I can download it?
