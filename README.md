@@ -18,7 +18,7 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 ## TO-DO LIST:
 
-* Updating /sb, with different colors, and liking's. Especially with /sb help. ✖
+* Updating /sb, with different colors, and liking's. Especially with /sb help. ✔
 
 * Updating all commands with new color formats on most/all commands. ✔
 
