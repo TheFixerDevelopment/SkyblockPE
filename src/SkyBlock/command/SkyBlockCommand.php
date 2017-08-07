@@ -313,7 +313,7 @@ class SkyBlockCommand extends Command {
                         else {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
                             if($island instanceof Island) {
-                                $this->sendMessage($sender, "____| {$island->getOwnerName()}'s Members |____");
+                                $this->sendMessage($sender, "____| {$island->getOwnerName()}'s §aIsland Members |____");
                                 $i = 1;
                                 foreach($island->getAllMembers() as $member) {
                                     $this->sendMessage($sender, "{$i}. {$member}");
@@ -546,8 +546,9 @@ class SkyBlockCommand extends Command {
                             "§ddisband" => "§5Delete your island",
 			    "§dremove" => "§5Remove a player from your island",
                             "§dmakeleader" => "§5Transfer island ownership",
+			    "§dreset" => "§5Reset's your island.",
 			    
-							"§dversion" => "§5Getet Skyblock version"
+							"§dversion" => "§5Gets Skyblock version."
                         ];
 						$sender->sendMessage(TextFormat::DARK_GREEN . "-----------" . TextFormat::BOLD . TextFormat::AQUA . " [" . TextFormat::GREEN . "SkyBlockPE Help" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "-----------"); 
                         foreach($commands as $command => $description) {
@@ -563,7 +564,7 @@ class SkyBlockCommand extends Command {
                 }
             }
             else {
-                $this->sendMessage($sender, "§2Use /sb help for a list of skyblock commands.");
+                $this->sendMessage($sender, "§dUse §5/sb help §dfor a list of skyblock commands.");
             }
         }
         else {
