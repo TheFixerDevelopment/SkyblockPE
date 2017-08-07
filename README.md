@@ -3,7 +3,7 @@ SkyBlock for Forks / Spoons, and PocketMine servers.
 ### Contributions
 You are free to contribute to this project, any kind of help is accepted.
 ### Where I can download it?
-You can download it [Here](https://github.com/TheFixerDevelopment/SkyblockPE/releases/tag/v0.1.9), or Download this on poggit [Here](https://poggit.pmmp.io/ci/TheFixerDevelopment/SkyblockPE/SkyBlock).
+You can download it [Here](https://github.com/TheFixerDevelopment/SkyblockPE/releases/tag/v0.2.0), or Download this on poggit [Here](https://poggit.pmmp.io/ci/TheFixerDevelopment/SkyblockPE/SkyBlock).
 
 
 
