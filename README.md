@@ -20,6 +20,8 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * Updating /sb, with different colors, and liking's. Especially with /sb help. ✖
 
+* Updating all commands with new color formats on most/all commands. ✔
+
 * When using /sb, it will instantly give the help information page. ✖
 
 * Add new commands: /island, and /is ✖
