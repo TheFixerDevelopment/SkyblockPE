@@ -1,5 +1,6 @@
 # SkyBlockPE
-SkyBlock for Forks / Spoons, and PocketMine servers.
+SkyBlock for Forks / Spoons ONLY. (Download this plugin for Pocketmine servers [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/Pocketmine-ONLY)
+
 ### Contributions
 You are free to contribute to this project, any kind of help is accepted.
 ### Where I can download it?
@@ -31,7 +32,7 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 ## COMPATIBLE SERVER SOFTWARE'S FOR THIS PLUGIN:
 
-* PocketMine-MP - Tested and working.
+* PocketMine-MP - Tested and working. (Use this branch [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/Pocketmine-ONLY)
 
 * GenisysPro - Tested and working.
 
