@@ -21,7 +21,7 @@ class SkyBlockCommand extends Command {
      */
     public function __construct(Main $plugin) {
         $this->plugin = $plugin;
-        parent::__construct("skyblock", "Main SkyBlock command", "Usage: /skyblock", ["sb"]);
+        parent::__construct("skyblock", "Main SkyBlock command", "§cUsage: /skyblock", ["sb"]);
     }
     public function sendMessage(Player $sender, $message) {
         $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
@@ -41,7 +41,7 @@ class SkyBlockCommand extends Command {
                             if($island instanceof Island) {
                                 $island->addPlayer($sender);
                                 $sender->teleport(new Position(15, 7, 10, $this->plugin->getServer()->getLevelByName($island->getIdentifier())));
-                                $this->sendMessage($sender, "§aYou were teleported to your island home");
+                                $this->sendMessage($sender, "§aYou were teleported to your island home succesfully");
                             }
                             else {
                                 $this->sendMessage($sender, "§4[Error] §cYou Dont have an island!!");
@@ -92,10 +92,10 @@ class SkyBlockCommand extends Command {
                                 $home = $island->getHomePosition();
                                 if($home instanceof Position) {
                                     $sender->teleport($home);
-                                    $this->sendMessage($sender, "§aYou have been teleported to your island home");
+                                    $this->sendMessage($sender, "§aYou have been teleported to your island home succesfully");
                                 }
                                 else {
-                                    $this->sendMessage($sender, "§4[Error] §cYour island haven't a home position set!");
+                                    $this->sendMessage($sender, "§4[Error] §cYour island hasn't got a home position set!");
                                 }
                             }
                             else {
@@ -116,7 +116,7 @@ class SkyBlockCommand extends Command {
                                 if($island->getOwnerName() == strtolower($sender->getName())) {
                                     if($sender->getLevel()->getName() == $config->get("island")) {
                                         $island->setHomePosition($sender->getPosition());
-                                        $this->sendMessage($sender, "§aYou set your island home successfully!");
+                                        $this->sendMessage($sender, "§aYou have set your island home successfully!");
                                     }
                                     else {
                                         $this->sendMessage($sender, "§4[Error] §cYou must be in your island to set home!");
@@ -212,7 +212,7 @@ class SkyBlockCommand extends Command {
                                             $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($player);
                                             if(empty($config->get("island"))) {
                                                 $this->plugin->getInvitationHandler()->addInvitation($sender, $player, $island);
-                                                $this->sendMessage($sender, "§aYou sent a invitation to §2{$player->getName()}!");
+                                                $this->sendMessage($sender, "§aYou sent a invitation to §2{$player->getName()} §asuccesfully!");
                                                 $this->sendMessage($player, "{$sender->getName()} §ainvited you to his island! §2Do /skyblock <accept/reject> {$sender->getName()}");
                                             }
                                             else {
@@ -374,8 +374,8 @@ class SkyBlockCommand extends Command {
                                             if($island == $playerIsland) {
                                                 $island->setOwnerName($player);
                                                 $island->addPlayer($player);
-                                                $this->sendMessage($sender, "§aYou sent the ownership to {$player->getName()}");
-                                                $this->sendMessage($player, "§aYou get your island ownership by {$sender->getName()}");
+                                                $this->sendMessage($sender, "§aYou set the ownership to §2{$player->getName()} §asuccesfully!");
+                                                $this->sendMessage($player, "§aYou are now the Ownership of your island, by §2{$sender->getName()}");
                                             }
                                             else {
                                                 $this->sendMessage($sender, "§4[Error] §cThe player should be on your island!");
@@ -394,7 +394,7 @@ class SkyBlockCommand extends Command {
                                 }
                             }
                             else {
-                                $this->sendMessage($sender, "§4[Error] §cYou must be in a island to set a new leader!!");
+                                $this->sendMessage($sender, "§4[Error] §cYou must be in a island to set a new leader!");
                             }
                         }
 				}
@@ -409,14 +409,14 @@ class SkyBlockCommand extends Command {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
                             if($island instanceof Island) {
                                 if($island->getOwnerName() == strtolower($sender->getName())) {
-                                    $this->sendMessage($sender, "§4[Error] §cYou cannot leave a island if your the owner! Maybe you can try use /skyblock disband");
+                                    $this->sendMessage($sender, "§4[Error] §cYou cannot leave a island if you're the owner! Maybe you can try using /skyblock disband");
                                 }
                                 else {
                                     $this->plugin->getChatHandler()->removePlayerFromChat($sender);
                                     $config->set("island", "");
                                     $config->save();
                                     $island->removeMember(strtolower($sender->getName()));
-                                    $this->sendMessage($sender, "§aYou lefr the island succesfully!");
+                                    $this->sendMessage($sender, "§aYou left the island succesfully!");
                                 }
                             }
                             else {
@@ -442,7 +442,7 @@ class SkyBlockCommand extends Command {
                                             if($player instanceof Player and $player->isOnline()) {
                                                 $this->plugin->getChatHandler()->removePlayerFromChat($player);
                                             }
-                                            $this->sendMessage($sender, "§2{$args[1]} §awas removed from your team!");
+                                            $this->sendMessage($sender, "§2{$args[1]} §awas removed from your team/island succesfully!");
                                         }
                                         else {
                                             $this->sendMessage($sender, "§4[Error] §c{$args[1]} isn't a player of your island!");
@@ -497,7 +497,7 @@ class SkyBlockCommand extends Command {
                                     $reset = $this->plugin->getResetHandler()->getResetTimer($sender);
                                     if($reset instanceof Reset) {
                                         $minutes = Utils::printSeconds($reset->getTime());
-                                        $this->sendMessage($sender, "§5You'll be able to reset your island again in §{$minutes} §5minutes");
+                                        $this->sendMessage($sender, "§5You'll be able to reset your island again in §d{$minutes} §5minutes");
                                     }
                                     else {
                                         foreach($island->getAllMembers() as $member) {
@@ -531,23 +531,23 @@ class SkyBlockCommand extends Command {
                     case "help":
 				if ($sender->hasPermission('sbpe.cmd.home') or $sender->hasPermission('sbpe')) {
                         $commands = [
-                            "help" => "Show skyblock command info",
-                            "create" => "Create a new island",
-                            "join" => "Teleport you to your island",
-                            "expel" => "Kick someone from your island",
-                            "lock" => "Lock/unlock your island, then nobody/everybody will be able to join",
-                            "sethome" => "Set your island home",
-                            "home" => "Teleport you to your island home",
-                            "members" => "Show all members of your island",
-                            "tp <ownerName>" => "Teleport you to a island that isn't yours",
-                            "invite" => "Invite a player to be member of your island",
-                            "accept/reject <sender name>" => "Accept/reject an invitation",
-                            "leave" => "Leave your island",
-                            "disband" => "Remove your island",
-			    "remove" => "Remove a player from your island",
-                            "makeleader" => "Transfer island ownership",
+                            "§dhelp" => "§5Show skyblock command info",
+                            "§dcreate" => "§5Create a new island",
+                            "§djoin" => "§5Teleport you to your island",
+                            "§dexpel" => "§5Kick someone from your island",
+                            "§dlock" => "§5Lock/unlock your island, then nobody/everybody will be able to join",
+                            "§dsethome" => "§5Set your island home",
+                            "§dhome" => "§5Teleport you to your island home",
+                            "§dmembers" => "§5Show all members of your island",
+                            "§dtp <ownerName>" => "§5Teleport you to a island that isn't yours",
+                            "§dinvite" => "§5Invite a player to be member of your island",
+                            "§daccept/reject <sender name>" => "§5Accept/reject an invitation",
+                            "§dleave" => "§5Leave your island",
+                            "§ddisband" => "§5Delete your island",
+			    "§dremove" => "§5Remove a player from your island",
+                            "§dmakeleader" => "§5Transfer island ownership",
 			    
-							"version" => "Get Skyblock version"
+							"§dversion" => "§5Getet Skyblock version"
                         ];
 						$sender->sendMessage(TextFormat::DARK_GREEN . "-----------" . TextFormat::BOLD . TextFormat::AQUA . " [" . TextFormat::GREEN . "SkyBlockPE Help" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "-----------"); 
                         foreach($commands as $command => $description) {
