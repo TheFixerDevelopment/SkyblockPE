@@ -1,5 +1,5 @@
 # SkyBlockPE
-SkyBlock for Forks / Spoons, and PocketMine servers.
+SkyBlock for PocketMine servers only. 
 ### Contributions
 You are free to contribute to this project, any kind of help is accepted.
 ### Where I can download it?
@@ -33,7 +33,7 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * PocketMine-MP - Tested and working.
 
-* GenisysPro - Tested and working.
+* GenisysPro - Tested and working. (Use the patch-1 branch for this to work.)
 
 * Tesseract - Not tested. You can test it yourself and tell us if it works or not.
 
