@@ -82,6 +82,8 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * NekoMine-MP - Not tested, but should work. (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
 
+* Leveryl - Not tested, but should work, (Use this branch) [Here] (https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
+
 
 
 
