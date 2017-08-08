@@ -300,7 +300,7 @@ class SkyBlockCommand extends Command {
                             }
                         }
                         else {
-                            $this->sendMessage($sender, "§cUsage: /skyblock accept <sender name>");
+                            $this->sendMessage($sender, "§cUsage: /skyblock reject <sender name>");
                         }
 				}
                         break;
