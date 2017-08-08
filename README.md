@@ -29,6 +29,8 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * Add alises to each command on the help page. ✖
 
+* Make this plugin work with even more server softwares. ✖
+
 
 ## COMPATIBLE SERVER SOFTWARE'S FOR THIS PLUGIN:
 
