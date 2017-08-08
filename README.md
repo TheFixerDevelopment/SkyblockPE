@@ -47,9 +47,9 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * Updating all commands with new color formats on most/all commands. ✔
 
-* When using /sb, it will instantly give the help information page. ✖
+* When using /is, it will instantly give the help information page. ✖
 
-* Add new commands: /island, and /is ✖
+* Add new commands: /island, and /is ✔
 
 * Add alises to each command on the help page. ✖
 
