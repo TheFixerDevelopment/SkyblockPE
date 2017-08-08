@@ -125,3 +125,51 @@ VERSIONES COMPATIBLES MCPE PARA ESTE PLUGIN:
 * MCPE V1.1.x - Funcionamiento.
 * MCPE V1.0.x - No probado.
 Gracias, y los mantendrá informados sobre las noticias.
+
+
+### Chinese Language
+SkyBlockPE
+SkyBlock僅適用於BETA用戶，也可用於勺子。
+
+警告：
+
+這是在測試v1.0.0，並不是現在可用的狀態。此更新包括：
+*命令更改。
+*許可變更。
+*幫助頁面更改。
+*許多錯誤修復，但在這個測試階段可能會增加更多的錯誤。
+*每個命令的不同顏色格式。
+*新命令：/ is和/ island。
+還有更多在未來。請不要抱怨，如果這個插件不工作，甚至更糟糕的是，不可用。該分支正處於v1.0.0的測試階段，不會在公共服務器上使用，直到如此。如果一切順利，這將盡快更新。
+
+我們如何幫助您進行測試階段？
+如果您知道上述條款和條件以及警告/通知，則可以下載此插件。 Alink將很快更新。如果您安裝此插件，並在插件出現或出現任何此類問題時，在STARTUP或插件無法正確加載，或者即使插件自身無法正常工作，或其他方面，那麼請在這個分支上打開一個問題並告訴我們bug。我們會盡快修復它們。謝謝。
+
+捐款
+你可以自由地為這個項目做出貢獻，任何一種幫助被接受。
+
+哪裡可以下載？
+您可以下載此插件的BETA版本（僅適用於BETA用戶）
+
+為發展商
+您可以在這裡更改SkyBlockCommand.php：https://github.com/TheFixerDevelopment/SkyblockPE/blob/patch-1/src/SkyBlock/command/SkyBlockCommand.php在線528，消息進來，說一個實際的消息。改變你的喜好但是除非你是專業的編碼人員，還要改變一些事情，別改變別的東西。為什麼我將/ sb版本消息留空，是因為有些人想洩漏信息，不會認為這是理想的。不過，如果您不同意，您可以根據自己的喜好進行更改。默認情況下，它已被刪除，但正如我所說，您可以更改528行上的“消息”。
+
+待辦事項清單：
+*更新/ sb，不同的顏色和喜好。特別是/ sb幫助。 ✔
+*在大多數/所有命令上使用新的顏色格式更新所有命令。 ✔
+*使用/時，會立即給出幫助信息頁面。 ✖
+*添加新命令：/ island，和/是✔
+*在幫助頁面上的每個命令中添加alises。 ✖
+*使這個插件可以使用更多的服務器軟件。 ✖
+
+適用於此插件的兼容服務器軟件：
+* PocketMine-MP  - 測試和工作。 （在這裡使用這個分支
+* GenisysPro  - 測試和工作（使用這個分支）在這裡
+* Tesseract  - 測試和工作（使用這個分支）在這裡
+* ClearSky  - 測試和工作（使用這個分支）在這裡
+
+適用於此插管的MCPE版本：
+* MCPE V1.2.x  - 未測試=不工作。
+* MCPE V1.1.x  - 工作。
+* MCPE V1.0.x  - 未測試。
+謝謝，並將保持最新的消息。SkyBlockPE SkyBlock jǐn shìyòng yú BETA yònghù, yě kěyòng yú sháozi. Jǐnggào: Zhè shì zài cèshì v1.0.0, Bìng bùshì xiànzài kěyòng de zhuàngtài. Cǐ gēngxīn bāokuò: *Mìnglìng gēnggǎi. *Xǔkě biàngēng. *Bāngzhù yèmiàn gēnggǎi. *Xǔduō cuòwù xiūfù, dàn zài zhège cèshì jiēduàn kěnéng huì zēngjiā gèng duō de cuòwù. *Měi gè mìnglìng de bùtóng yánsè géshì. *Xīn mìnglìng:/ Is hé/ island. Hái yǒu gèng duō zài wèilái. Qǐng bùyào bàoyuàn, rúguǒ zhège chājiàn bù gōngzuò, shènzhì gèng zāogāo de shì, bùkě yòng. Gāi fēnzhī zhèng chǔyú v1.0.0 De cèshì jiēduàn, bù huì zài gōnggòng fúwùqì shàng shǐyòng, zhídào rúcǐ. Rúguǒ yīqiè shùnlì, zhè jiāng jǐnkuài gēngxīn. Wǒmen rúhé bāngzhù nín jìnxíng cèshì jiēduàn? Rúguǒ nín zhīdào shàngshù tiáokuǎn hé tiáojiàn yǐjí jǐnggào/tōngzhī, zé kěyǐ xiàzài cǐ chājiàn. Alink jiāng hěn kuài gēngxīn. Rúguǒ nín ānzhuāng cǐ chājiàn, bìng zài chājiàn chūxiàn huò chūxiàn rènhé cǐ lèi wèntí shí, zài STARTUP huò chājiàn wúfǎ zhèngquè jiāzài, huòzhě jíshǐ chājiàn zìshēn wúfǎ zhèngcháng gōngzuò, huò qítā fāngmiàn, nàme qǐng zài zhège fēnzhī shàng dǎkāi yīgè wèntí bìng gàosù wǒmen bug. Wǒmen huì jǐnkuài xiūfù tāmen. Xièxiè. Juānkuǎn nǐ kěyǐ zìyóu dì wéi zhège xiàngmù zuò chū gòngxiàn, rènhé yīzhǒng bāngzhù bèi jiēshòu. Nǎlǐ kěyǐ xiàzài? Nín kěyǐ xiàzài cǐ chājiàn de BETA bǎnběn (jǐn shìyòng yú BETA yònghù) wèi fāzhǎn shāng nín kěyǐ zài zhèlǐ gēnggǎi SkyBlockCommand.Php:Https://Github.Com/TheFixerDevelopment/SkyblockPE/blob/patch-1/src/SkyBlock/command/SkyBlockCommand.Php zàixiàn 528, xiāoxī jìnlái, shuō yīgè shíjì de xiāoxī. Gǎibiàn nǐ de xǐhào dànshì chúfēi nǐ shì zhuānyè de biānmǎ rényuán, hái yào gǎibiàn yīxiē shìqíng, bié gǎibiàn bié de dōngxī. Wèishéme wǒ jiāng/ sb bǎnběn xiāoxī liú kōng, shì yīnwèi yǒuxiē rén xiǎng xièlòu xìnxī, bù huì rènwéi zhè shì lǐxiǎng de. Bùguò, rúguǒ nín bùtóngyì, nín kěyǐ gēnjù zìjǐ de xǐhào jìnxíng gēnggǎi. Mòrèn qíngkuàng xià, tā yǐ bèi shānchú, dàn zhèngrú wǒ suǒ shuō, nín kěyǐ gēnggǎi 528 xíng shàng de “xiāoxī”. Dài bàn shìxiàng qīngdān: *Gēngxīn/ sb, bù tóng de yánsè hé xǐhào. Tèbié shì/ sb bāngzhù. ✔ *Zài dà duōshù/suǒyǒu mìnglìng shàng shǐyòng xīn de yánsè géshì gēngxīn suǒyǒu mìnglìng. ✔ *Shǐyòng/shí, huì lìjí gěi chū bāngzhù xìnxī yèmiàn. ✖ *Tiānjiā xīn mìnglìng:/ Island, hé/shì ✔ *zài bāngzhù yèmiàn shàng de měi gè mìnglìng zhōng tiānjiā alises. ✖ *Shǐ zhège chājiàn kěyǐ shǐyòng gèng duō de fúwùqì ruǎnjiàn. ✖ Shìyòng yú cǐ chājiàn de jiānróng fúwùqì ruǎnjiàn: * PocketMine-MP - cèshì hé gōngzuò. (Zài zhèlǐ shǐyòng zhège fēnzhī * GenisysPro - cèshì hé gōngzuò (shǐyòng zhège fēnzhī) zài zhèlǐ * Tesseract - cèshì hé gōngzuò (shǐyòng zhège fēnzhī) zài zhèlǐ * ClearSky - cèshì hé gōngzuò (shǐyòng zhège fēnzhī) zài zhèlǐ shìyòng yú cǐ chā guǎn de MCPE bǎnběn: * MCPE V1.2.X - wèi cèshì =bù gōngzuò. * MCP
