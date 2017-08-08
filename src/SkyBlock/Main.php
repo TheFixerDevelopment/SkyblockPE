@@ -55,11 +55,11 @@ class Main extends PluginBase {
         $this->setResetHandler();
         $this->setPluginHearbeat();
         $this->registerCommand();
-        $this->getLogger()->info(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "Skyblock by xXSirGamesXx has been Enabled. You're using the forks / Spoons ONLY branch. This will not work on Pocketmine.");
+        $this->getLogger()->info(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "Skyblock by Zeao has been Enabled. You're using the BETA version of this plugin. Things may not work properly. You have been warned.");
     }
 
     public function onDisable() {
-        $this->getLogger()->info(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "Skyblock by xXSirGamesXx has been Disabled");
+        $this->getLogger()->info(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "Skyblock by Zeao has been Disabled");
     }
 
     /**
