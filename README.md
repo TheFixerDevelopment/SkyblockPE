@@ -28,7 +28,7 @@ Thanks.
 ### Contributions
 You are free to contribute to this project, any kind of help is accepted.
 ### Where I can download it?
-A download link will be available soon (FOR BETA USERS ONLY)
+You can download the BETA version of this plugin [Here](https://github.com/TheFixerDevelopment/SkyblockPE/archive/Testing.zip)(FOR BETA USERS ONLY)
 
 
 
