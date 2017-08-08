@@ -60,11 +60,11 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * PocketMine-MP - Tested and working. (Use this branch [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/Pocketmine-ONLY)
 
-* GenisysPro - Tested and working. (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
+* GenisysPro - Tested and working (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
 
-* Tesseract - Tested and working (Using this branch)
+* Tesseract - Tested and working (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
 
-* ClearSky - Tested and working (Using this branch)
+* ClearSky - Tested and working (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
 
 
 ## COMPATIBLE MCPE VERSIONS FOR THIS PLUGIN:
