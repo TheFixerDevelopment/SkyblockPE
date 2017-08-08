@@ -334,6 +334,7 @@ class SkyBlockCommand extends Command {
 				}
                         break;
                     case "delete":
+		    case "disband":
 				if ($sender->hasPermission('sbpe.cmd.delete') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
@@ -469,7 +470,8 @@ class SkyBlockCommand extends Command {
                         }
 				}
                         break;					
-						case "tp":
+		    case "tp":
+		    case "tpto":
 				if ($sender->hasPermission('sbpe.cmd.tp') or $sender->hasPermission('sbpe')) {
                         if(isset($args[1])) {
                             $island = $this->plugin->getIslandManager()->getIslandByOwner($args[1]);
@@ -492,6 +494,7 @@ class SkyBlockCommand extends Command {
 				}
                         break;
                     case "reset":
+		    case "clear":
 				if ($sender->hasPermission('sbpe.cmd.reset') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
@@ -551,7 +554,7 @@ class SkyBlockCommand extends Command {
                             "§eaccept <player>" => "§7accept a player's island invitation. §7(aliases: §e/is yes§7)",
 			    "§edeny <player>" => "§7Deny a player's island invitation. §7(aliases: §e/is no, /is reject§7)",
                             "§eleave" => "§7Leave your island",
-                            "§edelete" => "§7Delete your island",
+                            "§edelete" => "§7Delete your island. §7(Aliases: §e/is disband§7)",
 			    "§eremove" => "§7Remove a player from your island",
                             "§emakeleader" => "§7Transfer island ownership. §7(Aliases: §e/is newleader§7)",
 			    "§ereset" => "§7Reset's your island. §7(Aliases: §e/is clear§7)",
