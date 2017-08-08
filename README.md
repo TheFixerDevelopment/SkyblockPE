@@ -1,6 +1,16 @@
 # SkyBlockPE
 SkyBlock for BETA users only, also for spoons.
 
+## We supoort the following languages:
+
+* English
+
+* Spanish
+
+* Chinese
+
+* Czech
+
 ## WARNING:
 
 # This is in testing for v1.0.0, and is not in a useable state as of now. This update includes:
@@ -21,8 +31,8 @@ And many more in the future.
 Please do not complain if this plugin doesn't work, or even worse, un useable. This branch is in the testing phase for the v1.0.0, and is not for use on public servers untill told so. If everything does go well, this will be updated ASAP.
 
 ### How do we help you with the testing phase?
-If you know these terms and conditions, and warnings/notices as stated above, then you may download this plugin. Alink will be updated shortly.
-If you do install this plugin, and have issues with occurance, or any such issue, with the plugin, upon STARTUP, or the plugin doesn't load properly, or even if the plugin its self don't work, or other things, then please open an issue on this branch and tell os the bugs. We will try fixing them as soon as possible.
+If you know these terms and conditions, and warnings/notices as stated above, then you may download this plugin. A link will be updated shortly.
+If you do install this plugin, and have issues with occurance, or any such issue, with the plugin, upon STARTUP, or the plugin doesn't load properly, or even if the plugin its self don't work, or other things, then please open an issue on this branch and tell us the bugs. We will try fixing them as soon as possible.
 Thanks.
 
 ### Contributions
@@ -51,7 +61,7 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * Add new commands: /island, and /is ✔
 
-* Add alises to each command on the help page. ✖
+* Add aliases to each command on the help page. ✔
 
 * Make this plugin work with even more server softwares. ✖
 
@@ -79,7 +89,7 @@ Thank you, and will be keeping you all up to date on news.
 
 
 
-### SPANISH
+### SPANISH LANGUAGE
 SkyBlockPE
 SkyBlock sólo para usuarios de BETA, también para cucharas.
 
@@ -111,7 +121,7 @@ LISTA DE QUEHACERES:
 * Actualización de todos los comandos con nuevos formatos de color en la mayoría de todos los comandos. ✔
 * Al usar / es, dará instantáneamente la página de información de ayuda. ✖
 * Añadir nuevos comandos: / island, y / es ✔
-* Añada alises a cada comando en la página de ayuda. ✖
+* Añada aliases a cada comando en la página de ayuda. ✔
 * Hacer este complemento de trabajo con software de servidor aún más. ✖
 
 SOFTWARE DEL SERVIDOR COMPATIBLE PARA ESTE PLUGIN:
@@ -159,7 +169,7 @@ SkyBlock僅適用於BETA用戶，也可用於勺子。
 *在大多數/所有命令上使用新的顏色格式更新所有命令。 ✔
 *使用/時，會立即給出幫助信息頁面。 ✖
 *添加新命令：/ island，和/是✔
-*在幫助頁面上的每個命令中添加alises。 ✖
+*在幫助頁面上的每個命令中添加aliases。 ✔
 *使這個插件可以使用更多的服務器軟件。 ✖
 
 適用於此插件的兼容服務器軟件：
@@ -175,7 +185,7 @@ SkyBlock僅適用於BETA用戶，也可用於勺子。
 謝謝，並將保持最新的消息。SkyBlockPE SkyBlock jǐn shìyòng yú BETA yònghù, yě kěyòng yú sháozi. Jǐnggào: Zhè shì zài cèshì v1.0.0, Bìng bùshì xiànzài kěyòng de zhuàngtài. Cǐ gēngxīn bāokuò: *Mìnglìng gēnggǎi. *Xǔkě biàngēng. *Bāngzhù yèmiàn gēnggǎi. *Xǔduō cuòwù xiūfù, dàn zài zhège cèshì jiēduàn kěnéng huì zēngjiā gèng duō de cuòwù. *Měi gè mìnglìng de bùtóng yánsè géshì. *Xīn mìnglìng:/ Is hé/ island. Hái yǒu gèng duō zài wèilái. Qǐng bùyào bàoyuàn, rúguǒ zhège chājiàn bù gōngzuò, shènzhì gèng zāogāo de shì, bùkě yòng. Gāi fēnzhī zhèng chǔyú v1.0.0 De cèshì jiēduàn, bù huì zài gōnggòng fúwùqì shàng shǐyòng, zhídào rúcǐ. Rúguǒ yīqiè shùnlì, zhè jiāng jǐnkuài gēngxīn. Wǒmen rúhé bāngzhù nín jìnxíng cèshì jiēduàn? Rúguǒ nín zhīdào shàngshù tiáokuǎn hé tiáojiàn yǐjí jǐnggào/tōngzhī, zé kěyǐ xiàzài cǐ chājiàn. Alink jiāng hěn kuài gēngxīn. Rúguǒ nín ānzhuāng cǐ chājiàn, bìng zài chājiàn chūxiàn huò chūxiàn rènhé cǐ lèi wèntí shí, zài STARTUP huò chājiàn wúfǎ zhèngquè jiāzài, huòzhě jíshǐ chājiàn zìshēn wúfǎ zhèngcháng gōngzuò, huò qítā fāngmiàn, nàme qǐng zài zhège fēnzhī shàng dǎkāi yīgè wèntí bìng gàosù wǒmen bug. Wǒmen huì jǐnkuài xiūfù tāmen. Xièxiè. Juānkuǎn nǐ kěyǐ zìyóu dì wéi zhège xiàngmù zuò chū gòngxiàn, rènhé yīzhǒng bāngzhù bèi jiēshòu. Nǎlǐ kěyǐ xiàzài? Nín kěyǐ xiàzài cǐ chājiàn de BETA bǎnběn (jǐn shìyòng yú BETA yònghù) wèi fāzhǎn shāng nín kěyǐ zài zhèlǐ gēnggǎi SkyBlockCommand.Php:Https://Github.Com/TheFixerDevelopment/SkyblockPE/blob/patch-1/src/SkyBlock/command/SkyBlockCommand.Php zàixiàn 528, xiāoxī jìnlái, shuō yīgè shíjì de xiāoxī. Gǎibiàn nǐ de xǐhào dànshì chúfēi nǐ shì zhuānyè de biānmǎ rényuán, hái yào gǎibiàn yīxiē shìqíng, bié gǎibiàn bié de dōngxī. Wèishéme wǒ jiāng/ sb bǎnběn xiāoxī liú kōng, shì yīnwèi yǒuxiē rén xiǎng xièlòu xìnxī, bù huì rènwéi zhè shì lǐxiǎng de. Bùguò, rúguǒ nín bùtóngyì, nín kěyǐ gēnjù zìjǐ de xǐhào jìnxíng gēnggǎi. Mòrèn qíngkuàng xià, tā yǐ bèi shānchú, dàn zhèngrú wǒ suǒ shuō, nín kěyǐ gēnggǎi 528 xíng shàng de “xiāoxī”. Dài bàn shìxiàng qīngdān: *Gēngxīn/ sb, bù tóng de yánsè hé xǐhào. Tèbié shì/ sb bāngzhù. ✔ *Zài dà duōshù/suǒyǒu mìnglìng shàng shǐyòng xīn de yánsè géshì gēngxīn suǒyǒu mìnglìng. ✔ *Shǐyòng/shí, huì lìjí gěi chū bāngzhù xìnxī yèmiàn. ✖ *Tiānjiā xīn mìnglìng:/ Island, hé/shì ✔ *zài bāngzhù yèmiàn shàng de měi gè mìnglìng zhōng tiānjiā alises. ✖ *Shǐ zhège chājiàn kěyǐ shǐyòng gèng duō de fúwùqì ruǎnjiàn. ✖ Shìyòng yú cǐ chājiàn de jiānróng fúwùqì ruǎnjiàn: * PocketMine-MP - cèshì hé gōngzuò. (Zài zhèlǐ shǐyòng zhège fēnzhī * GenisysPro - cèshì hé gōngzuò (shǐyòng zhège fēnzhī) zài zhèlǐ * Tesseract - cèshì hé gōngzuò (shǐyòng zhège fēnzhī) zài zhèlǐ * ClearSky - cèshì hé gōngzuò (shǐyòng zhège fēnzhī) zài zhèlǐ shìyòng yú cǐ chā guǎn de MCPE bǎnběn: * MCPE V1.2.X - wèi cèshì =bù gōngzuò. * MCP
 
 
-## Czech Langauge Support
+## Czech Language
 SkyBlockPE
 SkyBlock pro uživatele BETA, a to i pro lžíce.
 
@@ -207,7 +217,7 @@ SEZNAM ÚKOLŮ:
 * Aktualizace všech příkazů s novými barevnými formáty pro většinu / všechny příkazy. ✔
 * Při použití / is, okamžitě se zobrazí stránka nápovědy. ✖
 * Přidejte nové příkazy: / island, a / je ✔
-* Přidejte alises na každý příkaz na stránce nápovědy. ✖
+* Přidejte aliases na každý příkaz na stránce nápovědy. ✔
 * Vytvořte tento plugin pomocí ještě více serverových softwarů. ✖
 
 SOFTWARE KOMPATIBILNÍHO SERVERU PRO TOMTO PLUGIN:
