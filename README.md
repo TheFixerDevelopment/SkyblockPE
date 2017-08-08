@@ -63,7 +63,7 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * Add aliases to each command on the help page. ✔
 
-* Make this plugin work with even more server softwares. ✖
+* Make this plugin work with even more server softwares. ✔
 
 
 ## COMPATIBLE SERVER SOFTWARE'S FOR THIS PLUGIN:
@@ -84,12 +84,14 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * Leveryl - Not tested, but should work, (Use this branch) [Here] (https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
 
+* Endako - Not tested, but should work. (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/Pocketmine-ONLY)
+
 
 
 
 ## COMPATIBLE MCPE VERSIONS FOR THIS PLUGIN:
 
-* MCPE V1.2.x - Not tested = Not working.
+* MCPE V1.2.x - Not tested, but should work with some branches.
 
 * MCPE V1.1.x - Working.
 
@@ -132,7 +134,7 @@ LISTA DE QUEHACERES:
 * Al usar / es, dará instantáneamente la página de información de ayuda. ✖
 * Añadir nuevos comandos: / island, y / es ✔
 * Añada aliases a cada comando en la página de ayuda. ✔
-* Hacer este complemento de trabajo con software de servidor aún más. ✖
+* Hacer este complemento de trabajo con software de servidor aún más. ✔
 
 SOFTWARE DEL SERVIDOR COMPATIBLE PARA ESTE PLUGIN:
 * PocketMine-MP - Probado y funcionando. (Usa esta rama aquí
@@ -180,7 +182,7 @@ SkyBlock僅適用於BETA用戶，也可用於勺子。
 *使用/時，會立即給出幫助信息頁面。 ✖
 *添加新命令：/ island，和/是✔
 *在幫助頁面上的每個命令中添加aliases。 ✔
-*使這個插件可以使用更多的服務器軟件。 ✖
+*使這個插件可以使用更多的服務器軟件。 ✔
 
 適用於此插件的兼容服務器軟件：
 * PocketMine-MP  - 測試和工作。 （在這裡使用這個分支
@@ -228,7 +230,7 @@ SEZNAM ÚKOLŮ:
 * Při použití / is, okamžitě se zobrazí stránka nápovědy. ✖
 * Přidejte nové příkazy: / island, a / je ✔
 * Přidejte aliases na každý příkaz na stránce nápovědy. ✔
-* Vytvořte tento plugin pomocí ještě více serverových softwarů. ✖
+* Vytvořte tento plugin pomocí ještě více serverových softwarů. ✔
 
 SOFTWARE KOMPATIBILNÍHO SERVERU PRO TOMTO PLUGIN:
 * PocketMine-MP - testováno a pracuje. (Použijte tuto větev zde
