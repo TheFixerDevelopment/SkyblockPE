@@ -28,7 +28,7 @@ Thanks.
 ### Contributions
 You are free to contribute to this project, any kind of help is accepted.
 ### Where I can download it?
-You can download it [Here](https://github.com/TheFixerDevelopment/SkyblockPE/releases/tag/v0.2.0), or Download this on poggit [Here](https://poggit.pmmp.io/ci/TheFixerDevelopment/SkyblockPE/SkyBlock).
+A download link will be available soon (FOR BETA USERS ONLY)
 
 
 
@@ -60,7 +60,7 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * PocketMine-MP - Tested and working. (Use this branch [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/Pocketmine-ONLY)
 
-* GenisysPro - Tested and working. (Using this branch)
+* GenisysPro - Tested and working. (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
 
 * Tesseract - Tested and working (Using this branch)
 
