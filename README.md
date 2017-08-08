@@ -1,5 +1,5 @@
 # SkyBlockPE
-SkyBlock for Forks / Spoons ONLY. (Download this plugin for Pocketmine servers [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/Pocketmine-ONLY)
+SkyBlock for Spoons ONLY. (Download this plugin for Pocketmine servers [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/Pocketmine-ONLY)
 
 ### Contributions
 You are free to contribute to this project, any kind of help is accepted.
