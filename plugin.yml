@@ -10,7 +10,7 @@ name: SkyBlockPE
 author: xXSirButterXx/xXSirGamesXx, edited by Zeao.
 website: Not showing due to self-leak information.
 main: SkyBlock\Main
-version: "0.2.0"
+version: "1.0.0-BETA1"
 api:
 - 3.0.0-ALPHA4
 - 3.0.0-ALPHA5
@@ -20,7 +20,7 @@ api:
 commands:
   skyblock:
   description: SkyBlockPE commands
-  aliases: ["sb", "skyblockpe"]
+  aliases: ["sb", "is", "island"]
   permission: sbpe
   
   
