@@ -76,6 +76,8 @@ default: op
 sbpe.cmd.reset:
 description: Reset an island
 default: true
+sbpe.cmd.changelog:
+default: true
 sbpe.cmd.ver:
 description: get sbpe version
 default: true
