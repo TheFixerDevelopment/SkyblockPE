@@ -76,7 +76,11 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * ClearSky - Tested and working (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
 
-* Steadfast - Not tested, but should work. (Use this branch) [Here](https://github.com/Hydreon/Steadfast2)
+* Steadfast - Not tested, but should work. (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
+
+* Rocky - Not tested  but should work. (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
+
+
 
 
 ## COMPATIBLE MCPE VERSIONS FOR THIS PLUGIN:
