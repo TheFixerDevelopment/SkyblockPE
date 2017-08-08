@@ -28,8 +28,8 @@ permissions:
 sbpe:
 description: /sb <args..>
 default: true
-sbpe.cmd.join:
-description: Join your island.
+sbpe.cmd.go:
+description: Go to your island.
 default: true
 sbpe.cmd.create:
 description: Create an island.
@@ -58,8 +58,8 @@ default: true
 sbpe.cmd.members:
 description: See all the members on your island
 default: true
-sbpe.cmd.disband:
-description: Disband your island 
+sbpe.cmd.delete:
+description: Deleted your island 
 default: true  
 sbpe.cmd.makeleader:
 description: Make someone else the leader
