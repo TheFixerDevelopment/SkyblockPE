@@ -173,3 +173,51 @@ SkyBlock僅適用於BETA用戶，也可用於勺子。
 * MCPE V1.1.x  - 工作。
 * MCPE V1.0.x  - 未測試。
 謝謝，並將保持最新的消息。SkyBlockPE SkyBlock jǐn shìyòng yú BETA yònghù, yě kěyòng yú sháozi. Jǐnggào: Zhè shì zài cèshì v1.0.0, Bìng bùshì xiànzài kěyòng de zhuàngtài. Cǐ gēngxīn bāokuò: *Mìnglìng gēnggǎi. *Xǔkě biàngēng. *Bāngzhù yèmiàn gēnggǎi. *Xǔduō cuòwù xiūfù, dàn zài zhège cèshì jiēduàn kěnéng huì zēngjiā gèng duō de cuòwù. *Měi gè mìnglìng de bùtóng yánsè géshì. *Xīn mìnglìng:/ Is hé/ island. Hái yǒu gèng duō zài wèilái. Qǐng bùyào bàoyuàn, rúguǒ zhège chājiàn bù gōngzuò, shènzhì gèng zāogāo de shì, bùkě yòng. Gāi fēnzhī zhèng chǔyú v1.0.0 De cèshì jiēduàn, bù huì zài gōnggòng fúwùqì shàng shǐyòng, zhídào rúcǐ. Rúguǒ yīqiè shùnlì, zhè jiāng jǐnkuài gēngxīn. Wǒmen rúhé bāngzhù nín jìnxíng cèshì jiēduàn? Rúguǒ nín zhīdào shàngshù tiáokuǎn hé tiáojiàn yǐjí jǐnggào/tōngzhī, zé kěyǐ xiàzài cǐ chājiàn. Alink jiāng hěn kuài gēngxīn. Rúguǒ nín ānzhuāng cǐ chājiàn, bìng zài chājiàn chūxiàn huò chūxiàn rènhé cǐ lèi wèntí shí, zài STARTUP huò chājiàn wúfǎ zhèngquè jiāzài, huòzhě jíshǐ chājiàn zìshēn wúfǎ zhèngcháng gōngzuò, huò qítā fāngmiàn, nàme qǐng zài zhège fēnzhī shàng dǎkāi yīgè wèntí bìng gàosù wǒmen bug. Wǒmen huì jǐnkuài xiūfù tāmen. Xièxiè. Juānkuǎn nǐ kěyǐ zìyóu dì wéi zhège xiàngmù zuò chū gòngxiàn, rènhé yīzhǒng bāngzhù bèi jiēshòu. Nǎlǐ kěyǐ xiàzài? Nín kěyǐ xiàzài cǐ chājiàn de BETA bǎnběn (jǐn shìyòng yú BETA yònghù) wèi fāzhǎn shāng nín kěyǐ zài zhèlǐ gēnggǎi SkyBlockCommand.Php:Https://Github.Com/TheFixerDevelopment/SkyblockPE/blob/patch-1/src/SkyBlock/command/SkyBlockCommand.Php zàixiàn 528, xiāoxī jìnlái, shuō yīgè shíjì de xiāoxī. Gǎibiàn nǐ de xǐhào dànshì chúfēi nǐ shì zhuānyè de biānmǎ rényuán, hái yào gǎibiàn yīxiē shìqíng, bié gǎibiàn bié de dōngxī. Wèishéme wǒ jiāng/ sb bǎnběn xiāoxī liú kōng, shì yīnwèi yǒuxiē rén xiǎng xièlòu xìnxī, bù huì rènwéi zhè shì lǐxiǎng de. Bùguò, rúguǒ nín bùtóngyì, nín kěyǐ gēnjù zìjǐ de xǐhào jìnxíng gēnggǎi. Mòrèn qíngkuàng xià, tā yǐ bèi shānchú, dàn zhèngrú wǒ suǒ shuō, nín kěyǐ gēnggǎi 528 xíng shàng de “xiāoxī”. Dài bàn shìxiàng qīngdān: *Gēngxīn/ sb, bù tóng de yánsè hé xǐhào. Tèbié shì/ sb bāngzhù. ✔ *Zài dà duōshù/suǒyǒu mìnglìng shàng shǐyòng xīn de yánsè géshì gēngxīn suǒyǒu mìnglìng. ✔ *Shǐyòng/shí, huì lìjí gěi chū bāngzhù xìnxī yèmiàn. ✖ *Tiānjiā xīn mìnglìng:/ Island, hé/shì ✔ *zài bāngzhù yèmiàn shàng de měi gè mìnglìng zhōng tiānjiā alises. ✖ *Shǐ zhège chājiàn kěyǐ shǐyòng gèng duō de fúwùqì ruǎnjiàn. ✖ Shìyòng yú cǐ chājiàn de jiānróng fúwùqì ruǎnjiàn: * PocketMine-MP - cèshì hé gōngzuò. (Zài zhèlǐ shǐyòng zhège fēnzhī * GenisysPro - cèshì hé gōngzuò (shǐyòng zhège fēnzhī) zài zhèlǐ * Tesseract - cèshì hé gōngzuò (shǐyòng zhège fēnzhī) zài zhèlǐ * ClearSky - cèshì hé gōngzuò (shǐyòng zhège fēnzhī) zài zhèlǐ shìyòng yú cǐ chā guǎn de MCPE bǎnběn: * MCPE V1.2.X - wèi cèshì =bù gōngzuò. * MCP
+
+
+## Czech Langauge Support
+SkyBlockPE
+SkyBlock pro uživatele BETA, a to i pro lžíce.
+
+VAROVÁNÍ:
+
+To je v testování pro v1.0.0 a od té doby není v použitelném stavu. Tato aktualizace obsahuje:
+* Příkazové změny.
+* Změny povolení.
+* Změna stránky nápovědy.
+* Mnoho oprav chyb, ale v této testovací fázi se mohou zvýšit ještě další chyby.
+* Různý barevný formát pro každý příkaz.
+* Nové příkazy: / is, a / island.
+A mnoho dalších v budoucnu. Nepokládejte si stížnost, pokud tento plugin nefunguje, nebo dokonce ještě horší, není použitelný. Tato větev je ve zkušební fázi v1.0.0 a není určena k použití na veřejných serverech, dokud to neřekne. Pokud vše půjde dobře, bude to aktualizováno co nejdříve.
+
+Jak vám pomůžeme s testovací fází?
+Pokud znáte tyto smluvní podmínky a varování / upozornění, jak je uvedeno výše, můžete tento plugin stáhnout. Alink bude brzy aktualizován. Pokud nainstalujete tento plugin a máte problémy s výskytem nebo jakýmkoli jiným problémem s pluginem, po spuštění, nebo se plugin nespustí správně, nebo pokud plugin sám nefunguje, nebo jiné věci, Pak prosím otevřete problém na této pobočce a řekněte chyby. Pokusíme se je co nejdříve vyřešit. Dík.
+
+Příspěvky
+Máte možnost přispívat k tomuto projektu, přijímá se jakákoliv pomoc.
+
+Kde si ji mohu stáhnout?
+Zde můžete stáhnout verzi BETA tohoto pluginu (pouze pro uživatele BETA)
+
+Pro vývojáře
+Můžete změnit SkyBlockCommand.php zde: https://github.com/TheFixerDevelopment/SkyblockPE/blob/patch-1/src/SkyBlock/command/SkyBlockCommand.php Na řádku 528, kde je zpráva přijata, řečeno aktuální zpráva. Změňte ji podle svých představ. Ale neměňte nic jiného, ​​pokud nejste profesionální kodér a chcete změnit několik věcí. Důvodem, proč jsem vynechal / sb verze zprávy, je, že někteří lidé by chtěli uniknout informace, a nebude si myslet, že by to bylo ideální. Pokud však nesouhlasíte, můžete ji změnit podle svých představ. Ve výchozím nastavení je vynechána, ale jak jsem již řekl, můžete změnit "zprávu" na řádku 528.
+
+SEZNAM ÚKOLŮ:
+* Aktualizace / sb, s různými barvami a oblíbenými. Zvláště s / sb help. ✔
+* Aktualizace všech příkazů s novými barevnými formáty pro většinu / všechny příkazy. ✔
+* Při použití / is, okamžitě se zobrazí stránka nápovědy. ✖
+* Přidejte nové příkazy: / island, a / je ✔
+* Přidejte alises na každý příkaz na stránce nápovědy. ✖
+* Vytvořte tento plugin pomocí ještě více serverových softwarů. ✖
+
+SOFTWARE KOMPATIBILNÍHO SERVERU PRO TOMTO PLUGIN:
+* PocketMine-MP - testováno a pracuje. (Použijte tuto větev zde
+* GenisysPro - Testováno a pracuje (použijte tuto větev) Zde
+* Tesseract - testováno a pracuje (použijte tuto větev) Zde
+* ClearSky - Testováno a pracuje (použijte tuto větev) Zde
+
+KOMPATIBILNÍ MCPE VERZE PRO TOMTO PLUGIN:
+* MCPE V1.2.x - Netestováno = Nepracuje.
+* MCPE V1.1.x - pracovní.
+* MCPE V1.0.x - Netestováno.
+Děkujeme vám a budou Vás informovat o novinkách.
