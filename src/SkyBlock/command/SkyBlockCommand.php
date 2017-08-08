@@ -21,17 +21,17 @@ class SkyBlockCommand extends Command {
      */
     public function __construct(Main $plugin) {
         $this->plugin = $plugin;
-        parent::__construct("skyblock", "Main SkyBlock command", "§cUsage: /skyblock", ["sb"]);
+        parent::__construct("skyblock", "Main SkyBlock command", "§cUsage: /skyblock", ["sb", "is", "island"]);
     }
     public function sendMessage(Player $sender, $message) {
-        $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlockPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
+        $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlock" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
     }
     public function execute(CommandSender $sender, $commandLabel, array $args) {
         if($sender instanceof Player) {
             if(isset($args[0])) {
                 switch($args[0]) {
-                    case "join":
-			if ($sender->hasPermission('sbpe.cmd.join') or $sender->hasPermission('sbpe')) {
+                    case "go":
+			if ($sender->hasPermission('sbpe.cmd.go') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "§4[Error] §cYou Don't have an island!");
@@ -71,7 +71,7 @@ class SkyBlockCommand extends Command {
                                 }
                                 else {
                                     $this->plugin->getSkyBlockManager()->generateIsland($sender, "basic");
-                                    $this->sendMessage($sender, "§aYou successfully created a island! §bDo §5/sb join §ato go to your island!");
+                                    $this->sendMessage($sender, "§aYou successfully created a island! §bDo §5/is go §ato go on your island!");
                                 }
                             }
                         }
@@ -159,7 +159,7 @@ class SkyBlockCommand extends Command {
                                         }
                                     }
                                     else {
-                                        $this->sendMessage($sender, "§cUsage: /skyblock expel <name>");
+                                        $this->sendMessage($sender, "§cUsage: /is kick <player>");
                                     }
                                 }
                                 else {
@@ -213,7 +213,7 @@ class SkyBlockCommand extends Command {
                                             if(empty($config->get("island"))) {
                                                 $this->plugin->getInvitationHandler()->addInvitation($sender, $player, $island);
                                                 $this->sendMessage($sender, "§aYou sent a invitation to §2{$player->getName()} §asuccesfully!");
-                                                $this->sendMessage($player, "{$sender->getName()} §ainvited you to his island! §2Do /skyblock <accept/reject> {$sender->getName()}");
+                                                $this->sendMessage($player, "{$sender->getName()} §ainvited you to his island! §2Do /is accept §ato accept their invite, or §2/is deny §ato deny their request. {$sender->getName()}");
                                             }
                                             else {
                                                 $this->sendMessage($sender, "§4[Error] §cThis player is already in a island!");
@@ -224,7 +224,7 @@ class SkyBlockCommand extends Command {
                                         }
                                     }
                                     else {
-                                        $this->sendMessage($sender, "§cUsage: /skyblock invite <player>");
+                                        $this->sendMessage($sender, "§cUsage: /is invite <player>");
                                     }
                                 }
                                 else {
@@ -266,7 +266,7 @@ class SkyBlockCommand extends Command {
                             }
                         }
                         else {
-                            $this->sendMessage($sender, "§cUsage: /skyblock accept <sender name>");
+                            $this->sendMessage($sender, "§cUsage: /is accept <player>");
                         }
 				}
                         break;
@@ -300,7 +300,7 @@ class SkyBlockCommand extends Command {
                             }
                         }
                         else {
-                            $this->sendMessage($sender, "§cUsage: /skyblock reject <sender name>");
+                            $this->sendMessage($sender, "§cUsage: /is deny <player>");
                         }
 				}
                         break;
@@ -326,11 +326,11 @@ class SkyBlockCommand extends Command {
                         }
 				}
                         break;
-                    case "disband":
-				if ($sender->hasPermission('sbpe.cmd.disband') or $sender->hasPermission('sbpe')) {
+                    case "delete":
+				if ($sender->hasPermission('sbpe.cmd.delete') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
-                            $this->sendMessage($sender, "§4[Error] §cYou must be in a island to disband it!");
+                            $this->sendMessage($sender, "§4[Error] §cYou must be in a island to delete it!");
                         }
                         else {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
@@ -386,7 +386,7 @@ class SkyBlockCommand extends Command {
                                         }
                                     }
                                     else {
-                                        $this->sendMessage($sender, "§cUsage: /skyblock makeleader <player>");
+                                        $this->sendMessage($sender, "§cUsage: /is makeleader <player>");
                                     }
                                 }
                                 else {
@@ -409,7 +409,7 @@ class SkyBlockCommand extends Command {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
                             if($island instanceof Island) {
                                 if($island->getOwnerName() == strtolower($sender->getName())) {
-                                    $this->sendMessage($sender, "§4[Error] §cYou cannot leave a island if you're the owner! Maybe you can try using /skyblock disband");
+                                    $this->sendMessage($sender, "§4[Error] §cYou cannot leave a island if you're the owner! Maybe you can try using /is disband");
                                 }
                                 else {
                                     $this->plugin->getChatHandler()->removePlayerFromChat($sender);
@@ -449,7 +449,7 @@ class SkyBlockCommand extends Command {
                                         }
                                     }
                                     else {
-                                        $this->sendMessage($sender, "§cUsage: /skyblock remove <player>");
+                                        $this->sendMessage($sender, "§cUsage: /is remove <player>");
                                     }
                                 }
                                 else {
@@ -476,11 +476,11 @@ class SkyBlockCommand extends Command {
                                 }
                             }
                             else {
-                                $this->sendMessage($sender, "§4[Error] §cAt least one island member must be active if you want see the island!");
+                                $this->sendMessage($sender, "§4[Error] §cAt least one island member must be active if you want to see the island!");
                             }
                         }
                         else {
-                            $this->sendMessage($sender, "§cUsage: /skyblock tp <owner name>");
+                            $this->sendMessage($sender, "§cUsage: /is tp <owner_name>");
                         }
 				}
                         break;
@@ -525,46 +525,46 @@ class SkyBlockCommand extends Command {
 			case "version":
 			case "ver":	
 				if ($sender->hasPermission('sbpe.cmd.ver') or $sender->hasPermission('sbpe')) {
-				$this->sendMessage($sender, "§cNot showing infomation due to self-leak plugin.");
+				$this->sendMessage($sender, "§caTest plugin by Zeao. This branch is a testing branch. where bugs will be expected and major issues may occur. Version: §2v1.0.0-BETA-1");
 				}
 				break;
                     case "help":
 				if ($sender->hasPermission('sbpe.cmd.home') or $sender->hasPermission('sbpe')) {
                         $commands = [
-                            "§dhelp" => "§5Show skyblock command info",
-                            "§dcreate" => "§5Create a new island",
-                            "§djoin" => "§5Teleport you to your island",
-                            "§dexpel" => "§5Kick someone from your island",
-                            "§dlock" => "§5Lock/unlock your island, then nobody/everybody will be able to join",
-                            "§dsethome" => "§5Set your island home",
-                            "§dhome" => "§5Teleport you to your island home",
-                            "§dmembers" => "§5Show all members of your island",
-                            "§dtp <ownerName>" => "§5Teleport you to a island that isn't yours",
-                            "§dinvite" => "§5Invite a player to be member of your island",
-                            "§daccept/reject <sender name>" => "§5Accept/reject an invitation",
-                            "§dleave" => "§5Leave your island",
-                            "§ddisband" => "§5Delete your island",
-			    "§dremove" => "§5Remove a player from your island",
-                            "§dmakeleader" => "§5Transfer island ownership",
-			    "§dreset" => "§5Reset's your island.",
+                            "§ehelp" => "§7Show skyblock command info",
+                            "§ecreate" => "§7Create a new island",
+                            "§ego" => "§7Teleport you to your island",
+                            "§ekick" => "§7Kick someone from your island",
+                            "§elock" => "75Lock/unlock your island, then nobody/everybody will be able to join",
+                            "§esethome" => "§7Set your island home",
+                            "§ehome" => "§7Teleport you to your island home",
+                            "§emembers" => "§7Show all members of your island",
+                            "§etp <ownerName>" => "§7Teleport you to a island that isn't yours",
+                            "§einvite" => "§7Invite a player to be member of your island",
+                            "§eaccept/deny <player>" => "§7accept/deny's an invitation",
+                            "§eleave" => "§7Leave your island",
+                            "§edelete" => "§7Delete your island",
+			    "§eremove" => "§7Remove a player from your island",
+                            "§emakeleader" => "§7Transfer island ownership",
+			    "edreset" => "§7Reset's your island.",
 			    
-							"§dversion" => "§5Gets Skyblock version."
+							"§eversion" => "§7Gets Skyblock version."
                         ];
 						$sender->sendMessage(TextFormat::DARK_GREEN . "-----------" . TextFormat::BOLD . TextFormat::AQUA . " [" . TextFormat::GREEN . "SkyBlockPE Help" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "-----------"); 
                         foreach($commands as $command => $description) {
 			
-                            $sender->sendMessage(TextFormat::AQUA . "/" . TextFormat::GREEN . "skyblock {$command}: " . TextFormat::RESET . TextFormat::DARK_GREEN . $description);
+                            $sender->sendMessage(TextFormat::AQUA . "/" . TextFormat::GREEN . "is {$command}: " . TextFormat::RESET . TextFormat::DARK_GREEN . $description);
                         }
                         break;
 				}
                     default:
-                        $this->sendMessage($sender, "§cUnknown command. §dUse §5/sb help §dfor a list of skyblock commands.");
+                        $this->sendMessage($sender, "§cUnknown command. §dUse §5/is help §dfor a list of skyblock commands.");
 					
                         break;
                 }
             }
             else {
-                $this->sendMessage($sender, "§dUse §5/sb help §dfor a list of skyblock commands.");
+                $this->sendMessage($sender, "§7Use §e/is help §7for a list of §eskyblock commands.");
             }
         }
         else {
