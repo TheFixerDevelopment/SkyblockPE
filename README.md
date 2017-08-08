@@ -80,6 +80,8 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 * Rocky - Not tested  but should work. (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
 
+* NekoMine-MP - Not tested, but should work. (Use this branch) [Here](https://github.com/TheFixerDevelopment/SkyblockPE/tree/patch-1)
+
 
 
 
