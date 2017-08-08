@@ -238,6 +238,7 @@ class SkyBlockCommand extends Command {
 				}
                         break;
                     case "accept":
+		    case "yes":
 				if ($sender->hasPermission('sbpe.cmd.invite.accept') or $sender->hasPermission('sbpe')) {
                         if(isset($args[1])) {
                             $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
@@ -266,12 +267,13 @@ class SkyBlockCommand extends Command {
                             }
                         }
                         else {
-                            $this->sendMessage($sender, "§cUsage: /is accept <player>");
+                            $this->sendMessage($sender, "§cUsage: /is accept <player> or /is yes <player>");
                         }
 				}
                         break;
                     case "deny":
                     case "reject":
+		    case "no":
 				if ($sender->hasPermission('sbpe.cmd.invite.deny') or $sender->hasPermission('sbpe')) {
                         if(isset($args[1])) {
                             $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
@@ -300,7 +302,7 @@ class SkyBlockCommand extends Command {
                             }
                         }
                         else {
-                            $this->sendMessage($sender, "§cUsage: /is deny <player>");
+                            $this->sendMessage($sender, "§cUsage: /is deny <player> or /is reject <player> or /is no <player>");
                         }
 				}
                         break;
@@ -386,7 +388,7 @@ class SkyBlockCommand extends Command {
                                         }
                                     }
                                     else {
-                                        $this->sendMessage($sender, "§cUsage: /is makeleader <player>");
+                                        $this->sendMessage($sender, "§cUsage: /is makeleader <player> or /is newleader <player>");
                                     }
                                 }
                                 else {
@@ -525,7 +527,7 @@ class SkyBlockCommand extends Command {
 			case "version":
 			case "ver":	
 				if ($sender->hasPermission('sbpe.cmd.ver') or $sender->hasPermission('sbpe')) {
-				$this->sendMessage($sender, "§caTest plugin by Zeao. This branch is a testing branch. where bugs will be expected and major issues may occur. Version: §2v1.0.0-BETA-1");
+				$this->sendMessage($sender, "§aTest plugin by Zeao. This branch is a testing branch. where bugs will be expected and major issues may occur. Version: §2v1.0.0-BETA-1");
 				}
 				break;
                     case "help":
@@ -534,19 +536,20 @@ class SkyBlockCommand extends Command {
                             "§ehelp" => "§7Show skyblock command info",
                             "§ecreate" => "§7Create a new island",
                             "§ego" => "§7Teleport you to your island",
-                            "§ekick" => "§7Kick someone from your island",
-                            "§elock" => "75Lock/unlock your island, then nobody/everybody will be able to join",
+                            "§ekick" => "§7Kick someone from your island. (aliases §e/is expel§7)",
+                            "§elock" => "§7Lock/unlock your island, then nobody/everybody will be able to join",
                             "§esethome" => "§7Set your island home",
                             "§ehome" => "§7Teleport you to your island home",
                             "§emembers" => "§7Show all members of your island",
                             "§etp <ownerName>" => "§7Teleport you to a island that isn't yours",
                             "§einvite" => "§7Invite a player to be member of your island",
-                            "§eaccept/deny <player>" => "§7accept/deny's an invitation",
+                            "§eaccept <player>" => "§7accept a player's island invitation. §7(aliases: §e/is yes§7)",
+			    "§edeny <player>" => "§7Deny a player's island invitation. §7(aliases: §e/is no, /is reject§7)",
                             "§eleave" => "§7Leave your island",
                             "§edelete" => "§7Delete your island",
 			    "§eremove" => "§7Remove a player from your island",
-                            "§emakeleader" => "§7Transfer island ownership",
-			    "edreset" => "§7Reset's your island.",
+                            "§emakeleader" => "§7Transfer island ownership. §7(Aliases: §e/is newleader§7)",
+			    "§ereset" => "§7Reset's your island.",
 			    
 							"§eversion" => "§7Gets Skyblock version."
                         ];
@@ -558,7 +561,7 @@ class SkyBlockCommand extends Command {
                         break;
 				}
                     default:
-                        $this->sendMessage($sender, "§cUnknown command. §dUse §5/is help §dfor a list of skyblock commands.");
+                        $this->sendMessage($sender, "§cUnknown command. §7Use §e/is help §7for a list of skyblock commands.");
 					
                         break;
                 }
