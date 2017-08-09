@@ -472,7 +472,7 @@ class SkyBlockCommand extends Command {
                         break;					
 		    case "tp":
 		    case "tpto":
-				if ($sender->hasPermission('sbpe.command.tp') or $sender->hasPermission('sbpe')) {
+				if ($sender->hasPermission('sbpe.command.tp') {
                         if(isset($args[1])) {
                             $island = $this->plugin->getIslandManager()->getIslandByOwner($args[1]);
                             if($island instanceof Island) {
