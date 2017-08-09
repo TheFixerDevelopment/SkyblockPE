@@ -437,7 +437,7 @@ class SkyBlockCommand extends Command {
 				if ($sender->hasPermission('sbpe.cmd.remove') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
-                            $this->sendMessage($sender, "§4[Error] §cYou must be in a island to leave it!");
+                            $this->sendMessage($sender, "§4[Error] §cYou must be in a island to remove a user!");
                         }
                         else {
                             $island = $this->plugin->getIslandManager()->getOnlineIsland($config->get("island"));
@@ -472,7 +472,7 @@ class SkyBlockCommand extends Command {
                         break;					
 		    case "tp":
 		    case "tpto":
-				if ($sender->hasPermission('sbpe.cmd.tp') or $sender->hasPermission('sbpe')) {
+				if ($sender->hasPermission('sbpe.command.tp') or $sender->hasPermission('sbpe')) {
                         if(isset($args[1])) {
                             $island = $this->plugin->getIslandManager()->getIslandByOwner($args[1]);
                             if($island instanceof Island) {
@@ -533,20 +533,20 @@ class SkyBlockCommand extends Command {
 				}
                         break;
 			case "changelog":
-				if ($sender->hasPermission('sbpe.cmd.changelog') or $semder->hasPermission('sbpw')) {
-				$this->sendmessage($sender, "§aSkyblock §2v1.0.0-BETA4 §aChangeLog §bAdded /is changelog, Fixed color formats not being correct in /is help. Changed the enabling / disabling message upon STARTUP and upon server close. Added /is make to the aliases: /is create. Added back /is join, as an aliases for /is create. Fixed a major bug, caused the server to crash upon player join.");
+				if ($sender->hasPermission('sbpe.cmd.changelog') or $semder->hasPermission('sbpe')) {
+				$this->sendmessage($sender, "§aSkyblock §2v1.0.0-BETA5 §achangelog: §bFixed permission for /is changelog. Added aliases for /skyblock when searching for commands. Changed message for /is remove. Changed permission for /is tp. Updated unknown command issued. Updated the /is help usage.");
 				}
 				break;
 			case "version":
 			case "ver":	
 				if ($sender->hasPermission('sbpe.cmd.ver') or $sender->hasPermission('sbpe')) {
-				$this->sendMessage($sender, "§aTest plugin by Zeao. This branch is a testing branch. where bugs will be expected and major issues may occur. Version: §2v1.0.0-BETA-4");
+				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This branch is a testing branch. where bugs will be expected and major issues may occur. Version: §2v1.0.0-BETA-5");
 				}
 				break;
                     case "help":
-				if ($sender->hasPermission('sbpe.cmd.home') or $sender->hasPermission('sbpe')) {
+				if ($sender->hasPermission('sbpe.cmd.help') or $sender->hasPermission('sbpe')) {
                         $commands = [
-                            "§ehelp" => "§7Show skyblock command info",
+                            "§ehelp" => "§7Show skyblock command help page.",
                             "§ecreate" => "§7Create a new island §7(Aliases: §e/is make§7)",
                             "§ego" => "§7Teleport you to your island. §7(Aliases: §e/is join§7)",
                             "§ekick" => "§7Kick someone from your island. (Aliases §e/is expel§7)",
@@ -575,13 +575,13 @@ class SkyBlockCommand extends Command {
                         break;
 				}
                     default:
-                        $this->sendMessage($sender, "§cUnknown command. §7Use §e/is help §7for a list of skyblock commands.");
+                        $this->sendMessage($sender, "§cUnknown command. §7Please Use: §e/is help");
 					
                         break;
                 }
             }
             else {
-                $this->sendMessage($sender, "§7Use §e/is help §7for a list of §eskyblock commands.");
+                $this->sendMessage($sender, "§7Please use: §e/is help");
             }
         }
         else {
