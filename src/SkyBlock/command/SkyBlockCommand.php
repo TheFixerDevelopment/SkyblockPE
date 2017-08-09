@@ -21,7 +21,7 @@ class SkyBlockCommand extends Command {
      */
     public function __construct(Main $plugin) {
         $this->plugin = $plugin;
-        parent::__construct("skyblock", "Main SkyBlock command", "§cUsage: /skyblock", ["sb", "is", "island"]);
+        parent::__construct("skyblock", "Main SkyBlock command", "§a/skyblock (§eor /is or /sb or /island", ["sb", "is", "island"]);
     }
     public function sendMessage(Player $sender, $message) {
         $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlock" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
@@ -554,7 +554,7 @@ class SkyBlockCommand extends Command {
                             "§esethome" => "§7Set your island home",
                             "§ehome" => "§7Teleport you to your island home",
                             "§emembers" => "§7Show all members of your island. §7(Aliases: §e/is ourmembers or /is listmembers§7)",
-                            "§etp <ownerName>" => "§7Teleport you to a island that isn't yours. §7(Aliases: §e/is tpto <owner_name>§7)",
+                            "§etp" => "§7Teleport you to a island that isn't yours. §7(Aliases: §e/is tpto§7)",
                             "§einvite" => "§7Invite a player to be member of your island. §7(Aliases: §e/is ask§7)",
                             "§eaccept <player>" => "§7accept a player's island invitation. §7(Aliases: §e/is yes§7)",
 			    "§edeny <player>" => "§7Deny a player's island invitation. §7(Aliases: §e/is no or /is reject§7)",
