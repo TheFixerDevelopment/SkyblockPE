@@ -533,7 +533,7 @@ class SkyBlockCommand extends Command {
 				}
                         break;
 			case "changelog":
-				if ($sender->hasPermission('sbpe.cmd.changelog') or $semder->hasPermission('sbpe')) {
+				if ($sender->hasPermission('sbpe.cmd.changelog') or $sender->hasPermission('sbpe')) {
 				$this->sendmessage($sender, "§aSkyblock §2v1.0.0-BETA5 §achangelog: §bFixed permission for /is changelog. Added aliases for /skyblock when searching for commands. Changed message for /is remove. Changed permission for /is tp. Updated unknown command issued. Updated the /is help usage.");
 				}
 				break;
