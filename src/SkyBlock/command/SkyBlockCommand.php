@@ -534,13 +534,13 @@ class SkyBlockCommand extends Command {
                         break;
 			case "changelog":
 				if ($sender->hasPermission('sbpe.cmd.changelog') or $sender->hasPermission('sbpe')) {
-				$this->sendmessage($sender, "§aSkyblock §2v1.0.0-BETA5 §achangelog: §bFixed permission for /is changelog. Added aliases for /skyblock when searching for commands. Changed message for /is remove. Changed permission for /is tp. Updated unknown command issued. Updated the /is help usage.");
+				$this->sendmessage($sender, "§aSkyblock §2v1.0.0 §achangelog: §bMade the official release. +Made this plugin version the No-spoon support branch. where server softwares, which are being used by Spoons, are not supported, such as GenisysPro.");
 				}
 				break;
 			case "version":
 			case "ver":	
 				if ($sender->hasPermission('sbpe.cmd.ver') or $sender->hasPermission('sbpe')) {
-				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This branch is a testing branch. where bugs will be expected and major issues may occur. Version: §2v1.0.0-BETA-5");
+				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. Version: §2v1.0.0");
 				}
 				break;
                     case "help":
