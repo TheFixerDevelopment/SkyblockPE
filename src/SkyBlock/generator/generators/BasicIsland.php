@@ -50,15 +50,15 @@ class BasicIsland extends SkyBlockGenerator {
      *
      * @return string
      */
-    public function getName() {
+    public function getName(): string {
         return $this->name;
     }
 
-    public function getSettings() {
+    public function getSettings(): array {
         return $this->settings;
     }
 
-    public function generateChunk($chunkX, $chunkZ) {
+    public function generateChunk(int $chunkX, int $chunkZ) {
         $chunk = $this->level->getChunk($chunkX, $chunkZ);
         $chunk->setGenerated();
         if ($chunkX % 20 == 0 && $chunkZ % 20 == 0) {
@@ -79,7 +79,7 @@ class BasicIsland extends SkyBlockGenerator {
         }
     }
 
-    public function populateChunk($chunkX, $chunkZ) {
+    public function populateChunk(int $chunkX, int $chunkZ) {
         //TODO: Set Biome ID?
         return;
     }
@@ -89,7 +89,7 @@ class BasicIsland extends SkyBlockGenerator {
      *
      * @return Vector3
      */
-    public function getSpawn() {
+    public function getSpawn(): Vector3 {
         return new Vector3(8, 7, 10);
     }
 
