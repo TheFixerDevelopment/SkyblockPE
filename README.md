@@ -1,5 +1,5 @@
 # SkyBlockPE
-SkyBlock for BETA users only, also for spoons.
+SkyBlock for BETA users only, also, spoons aren't supported in this branch.
 
 ## We supoort the following languages:
 
