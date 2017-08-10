@@ -26,7 +26,7 @@ class SkyBlockCommand extends Command {
     public function sendMessage(Player $sender, $message) {
         $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlock" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
     }
-    public function execute(CommandSender $sender, $commandLabel, array $args) {
+    public function execute(CommandSender $sender, string $commandLabel, array $args) {
         if($sender instanceof Player) {
             if(isset($args[0])) {
                 switch($args[0]) {
