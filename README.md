@@ -22,4 +22,8 @@ Here are the links to the branches:
 
 * Testing (This is for spoons only): https://github.com/TheFixerDevelopment/SkyblockPE/tree/Testing
 
-* Testing (This is no spoons supported): https://github.com/TheFixerDevelopment/SkyblockPE/tree/Testing(no-spoons)
+* Testing (This is no spoons supported): https://github.com/TheFixerDevelopment/SkyblockPE/tree/Testing-(no-spoons)
+
+* Master (This is quite outdated and is not recommended to be used): https://github.com/TheFixerDevelopment/SkyblockPE/tree/master
+
+* dev (This is a buggy build, and is not recommended to be used): https://github.com/TheFixerDevelopment/SkyblockPE/tree/dev
