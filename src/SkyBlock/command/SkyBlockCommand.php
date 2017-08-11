@@ -83,6 +83,7 @@ class SkyBlockCommand extends Command {
 			}
                         break;
                     case "home":
+		    case "tphome":
 				if ($sender->hasPermission('sbpe.cmd.home') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
@@ -107,6 +108,8 @@ class SkyBlockCommand extends Command {
 				}
                         break;
                     case "sethome":
+		    case "addhome":
+		    case "makehome":
 				if ($sender->hasPermission('sbpe.cmd.sethome') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
@@ -175,6 +178,7 @@ class SkyBlockCommand extends Command {
 				}
                         break;
                     case "lock":
+		    case "togglelock":
 				if ($sender->hasPermission('sbpe.cmd.lock') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
@@ -408,6 +412,7 @@ class SkyBlockCommand extends Command {
 				}
                         break;
                     case "leave":
+		    case "quit":
 				if ($sender->hasPermission('sbpe.cmd.leave') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
@@ -434,6 +439,7 @@ class SkyBlockCommand extends Command {
 				}
                         break;
                     case "remove":
+		    case "takeaway":
 				if ($sender->hasPermission('sbpe.cmd.remove') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
@@ -533,37 +539,39 @@ class SkyBlockCommand extends Command {
 				}
                         break;
 			case "changelog":
+			case "clog":
 				if ($sender->hasPermission('sbpe.cmd.changelog') or $sender->hasPermission('sbpe')) {
-				$this->sendmessage($sender, "§aSkyblock §2v1.0.0-BETA5 §achangelog: §bFixed permission for /is changelog. Added aliases for /skyblock when searching for commands. Changed message for /is remove. Changed permission for /is tp. Updated unknown command issued. Updated the /is help usage.");
+				$this->sendmessage($sender, "§aSkyblock §2v1.0.0 §achangelog: §bAdded all command aliases. §cThat's all that has changed in this update.");
 				}
 				break;
 			case "version":
 			case "ver":	
 				if ($sender->hasPermission('sbpe.cmd.ver') or $sender->hasPermission('sbpe')) {
-				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This branch is a testing branch. where bugs will be expected and major issues may occur. Version: §2v1.0.0-BETA-5");
+				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This is the Public release of v1.0.0. Enjoy. Version: §2v1.0.0");
 				}
 				break;
                     case "help":
+		    case "?":
 				if ($sender->hasPermission('sbpe.cmd.help') or $sender->hasPermission('sbpe')) {
                         $commands = [
-                            "§ehelp" => "§7Show skyblock command help page.",
+                            "§ehelp" => "§7Show skyblock command help page. §7(Aliases: §e/is ?§7)",
                             "§ecreate" => "§7Create a new island §7(Aliases: §e/is make§7)",
                             "§ego" => "§7Teleport you to your island. §7(Aliases: §e/is join§7)",
                             "§ekick" => "§7Kick someone from your island. (Aliases §e/is expel§7)",
-                            "§elock" => "§7Lock/unlock your island, then nobody/everybody will be able to join",
-                            "§esethome" => "§7Set your island home",
-                            "§ehome" => "§7Teleport you to your island home",
+                            "§elock" => "§7Lock/unlock your island, then nobody/everybody will be able to join. §7Aliases: §e/is togglelock§7)",
+                            "§esethome" => "§7Set your island home. §7(Aliases: §e/is makehome, /is addhome§7)",
+                            "§ehome" => "§7Teleport you to your island home. §7(Aliases: §e/is tphome§7)",
                             "§emembers" => "§7Show all members of your island. §7(Aliases: §e/is ourmembers or /is listmembers§7)",
                             "§etp" => "§7Teleport you to a island that isn't yours. §7(Aliases: §e/is tpto§7)",
                             "§einvite" => "§7Invite a player to be member of your island. §7(Aliases: §e/is ask§7)",
                             "§eaccept <player>" => "§7accept a player's island invitation. §7(Aliases: §e/is yes§7)",
 			    "§edeny <player>" => "§7Deny a player's island invitation. §7(Aliases: §e/is no or /is reject§7)",
-                            "§eleave" => "§7Leave your island",
+                            "§eleave" => "§7Leave your island. §7(Aliases: §e/is quit§7)",
                             "§edelete" => "§7Delete your island. §7(Aliases: §e/is disband§7)",
-			    "§eremove" => "§7Remove a player from your island",
+			    "§eremove" => "§7Remove a player from your island. §7(Aliases: §e/is takeaway§7)",
                             "§emakeleader" => "§7Transfer island ownership. §7(Aliases: §e/is newleader§7)",
 			    "§ereset" => "§7Reset's your island. §7(Aliases: §e/is clear§7)",
-			    "§echangelog" => "§7Checks our latest change log.",
+			    "§echangelog" => "§7Checks our latest change log. §7(Aliases: §e/is clog§7)",
 			    
 							"§eversion" => "§7Gets Skyblock version. §7(Aliases: §e/is ver§7)"
                         ];
