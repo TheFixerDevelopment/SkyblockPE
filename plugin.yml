@@ -10,7 +10,7 @@ name: SkyBlockPE
 author: Zeao
 website: Not showing due to self-leak information.
 main: SkyBlock\Main
-version: "1.0.0"
+version: "1.0.1"
 api:
 - 3.0.0-ALPHA4
 - 3.0.0-ALPHA5
@@ -21,7 +21,60 @@ commands:
   skyblock:
   description: SkyBlockPE commands
   aliases: ["sb", "is", "island"]
-  permission: sbpe
+  go:
+  description: Teleport to your island.
+  aliases: ["join", "home"]
+  create:
+  description: Create your island.
+  aliases: ["make"]
+  tphome:
+  description: Teleport you to your home."
+  aliases: []
+  sethome:
+  description: Set home at your island.
+  aliases: ["makehome", "addhome"]
+  kick:
+  description: Kicks a player from the island.
+  aliases: ["expel"]
+  lock:
+  description: Locks/Unlocks an island.
+  aliases: ["togglelock"]
+  invite:
+  description: Invites a user to your island.
+  aliases: ["ask"]
+  accept:
+  description: Accepts a island invite.
+  aliases: ["yes"]
+  deny:
+  description: Denies a island request.
+  aliases: ["no", "reject"]
+  members:
+  description: List members in your island.
+  aliases: ["listmembers", "ourmembers"]
+  delete:
+  description: Delete's your island.
+  aliases: ["disband"]
+  makeleader:
+  description: Transfer's a new leader.
+  aliases: ["newleader"]
+  leave:
+  description: Leaves your island.
+  aliases: ["quit"]
+  remove:
+  description: Remove's a user from your island.
+  aliases: ["takeaway"]
+  tp:
+  description: Teleports you to another island.
+  aliases: ["tpto"]
+  reset:
+  description: Reset's your island to default.
+  aliases: ["clear"]
+  changelog:
+  description: Checks our latest change log.
+  aliases: ["clog"]
+  version:
+  description: Checks for the latest plugin version.
+  aliases: ["ver"]
   
   
 permissions:
@@ -34,12 +87,12 @@ default: true
 sbpe.cmd.create:
 description: Create an island.
 default: true
-sbpe.cmd.home:
-description: Go to your island home
+sbpe.cmd.tphome:
+description: Go to your island home (Command now aliased.)
 default: true
 sbpe.cmd.sethome:
-description: Sethome on your island if you have one
-default: true
+description: Sethome on your island if you have one (Not working.)
+default: op
 sbpe.cmd.kick:
 description: Kick someone off of your island
 default: true
