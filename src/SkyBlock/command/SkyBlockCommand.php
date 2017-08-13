@@ -32,6 +32,7 @@ class SkyBlockCommand extends Command {
                 switch($args[0]) {
                     case "go":
 		    case "join":
+		    case "home":
 			if ($sender->hasPermission('sbpe.cmd.go') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
@@ -82,9 +83,8 @@ class SkyBlockCommand extends Command {
                        	 }
 			}
                         break;
-                    case "home":
 		    case "tphome":
-				if ($sender->hasPermission('sbpe.cmd.home') or $sender->hasPermission('sbpe')) {
+				if ($sender->hasPermission('sbpe.cmd.tphome') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "§4[Error] §cYou Don't have an island");
@@ -541,13 +541,13 @@ class SkyBlockCommand extends Command {
 			case "changelog":
 			case "clog":
 				if ($sender->hasPermission('sbpe.cmd.changelog') or $sender->hasPermission('sbpe')) {
-				$this->sendmessage($sender, "§aSkyblock §2v1.0.0 §achangelog: §bAdded all command aliases. §cThat's all that has changed in this update.");
+				$this->sendmessage($sender, "§aSkyblock §2v1.0.1 §achangelog: §bChanged /is home to an aliases command of /is go, as /is home (Original) currently doesn't work. Changed /is home permission. Added a popup timer untill the request to accept / deny a player's invite to be over.");
 				}
 				break;
 			case "version":
 			case "ver":	
 				if ($sender->hasPermission('sbpe.cmd.ver') or $sender->hasPermission('sbpe')) {
-				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This is the Public release of v1.0.0. Enjoy. Version: §2v1.0.0");
+				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This is the Public release of v1.0.1. Enjoy. Version: §2v1.0.1 §cWant to see what's changed in this update? Do /is changelog.");
 				}
 				break;
                     case "help":
@@ -556,11 +556,10 @@ class SkyBlockCommand extends Command {
                         $commands = [
                             "§ehelp" => "§7Show skyblock command help page. §7(Aliases: §e/is ?§7)",
                             "§ecreate" => "§7Create a new island §7(Aliases: §e/is make§7)",
-                            "§ego" => "§7Teleport you to your island. §7(Aliases: §e/is join§7)",
+                            "§ego" => "§7Teleport you to your island. §7(Aliases: §e/is join, §e/is home§7)",
                             "§ekick" => "§7Kick someone from your island. (Aliases §e/is expel§7)",
                             "§elock" => "§7Lock/unlock your island, then nobody/everybody will be able to join. §7Aliases: §e/is togglelock§7)",
-                            "§esethome" => "§7Set your island home. §7(Aliases: §e/is makehome, /is addhome§7)",
-                            "§ehome" => "§7Teleport you to your island home. §7(Aliases: §e/is tphome§7)",
+                            "§esethome" => "§7Set your island home. §7(Aliases: §e/is makehome, /is addhome§7). §c(USELESS.)",
                             "§emembers" => "§7Show all members of your island. §7(Aliases: §e/is ourmembers or /is listmembers§7)",
                             "§etp" => "§7Teleport you to a island that isn't yours. §7(Aliases: §e/is tpto§7)",
                             "§einvite" => "§7Invite a player to be member of your island. §7(Aliases: §e/is ask§7)",
