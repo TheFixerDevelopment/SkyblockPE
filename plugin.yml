@@ -21,66 +21,13 @@ commands:
   skyblock:
   description: SkyBlockPE commands
   aliases: ["sb", "is", "island"]
-  go:
-  description: Teleport to your island.
-  aliases: ["join", "home"]
-  create:
-  description: Create your island.
-  aliases: ["make"]
-  tphome:
-  description: Teleport you to your home."
-  aliases: []
-  sethome:
-  description: Set home at your island.
-  aliases: ["makehome", "addhome"]
-  kick:
-  description: Kicks a player from the island.
-  aliases: ["expel"]
-  lock:
-  description: Locks/Unlocks an island.
-  aliases: ["togglelock"]
-  invite:
-  description: Invites a user to your island.
-  aliases: ["ask"]
-  accept:
-  description: Accepts a island invite.
-  aliases: ["yes"]
-  deny:
-  description: Denies a island request.
-  aliases: ["no", "reject"]
-  members:
-  description: List members in your island.
-  aliases: ["listmembers", "ourmembers"]
-  delete:
-  description: Delete's your island.
-  aliases: ["disband"]
-  makeleader:
-  description: Transfer's a new leader.
-  aliases: ["newleader"]
-  leave:
-  description: Leaves your island.
-  aliases: ["quit"]
-  remove:
-  description: Remove's a user from your island.
-  aliases: ["takeaway"]
-  tp:
-  description: Teleports you to another island.
-  aliases: ["tpto"]
-  reset:
-  description: Reset's your island to default.
-  aliases: ["clear"]
-  changelog:
-  description: Checks our latest change log.
-  aliases: ["clog"]
-  version:
-  description: Checks for the latest plugin version.
-  aliases: ["ver"]
   
   
 permissions:
 sbpe:
 description: Gives skyblock help.
 default: true
+children:
 sbpe.cmd.go:
 description: Go to your island.
 default: true
