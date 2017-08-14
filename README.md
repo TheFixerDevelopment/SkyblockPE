@@ -1,5 +1,5 @@
 # SkyBlockPE
-SkyBlock for BETA users only, also for spoons.
+SkyBlock for SPOON users only.
 
 ## We supoort the following languages:
 
@@ -11,27 +11,11 @@ SkyBlock for BETA users only, also for spoons.
 
 * Czech
 
-## WARNING:
+## UPDATED
 
-# This is in testing for v1.0.0, and is not in a useable state as of now. This update includes:
+# v1.0.0 Update has been released to the public. Please check releases tab on github.
 
-* Command changes.
-
-* Permission changes.
-
-* Help page changes.
-
-* Many bug fixes, but still more bugs may raise in this testing phase.
-
-* Different color format for every command.
-
-* New commands: /is, and /island.
-
-And many more in the future.
-Please do not complain if this plugin doesn't work, or even worse, un useable. This branch is in the testing phase for the v1.0.0, and is not for use on public servers untill told so. If everything does go well, this will be updated ASAP.
-
-### How do we help you with the testing phase?
-If you know these terms and conditions, and warnings/notices as stated above, then you may download this plugin. A link will be updated shortly.
+### How do we help you find bugs with this plugin?
 If you do install this plugin, and have issues with occurance, or any such issue, with the plugin, upon STARTUP, or the plugin doesn't load properly, or even if the plugin its self don't work, or other things, then please open an issue on this branch and tell us the bugs. We will try fixing them as soon as possible.
 Thanks.
 
@@ -39,6 +23,7 @@ Thanks.
 You are free to contribute to this project, any kind of help is accepted.
 ### Where I can download it?
 You can download the BETA version of this plugin [Here](https://github.com/TheFixerDevelopment/SkyblockPE/archive/Testing.zip)(FOR BETA USERS ONLY)
+However, since v1.0.0 has been released, you can install this plugin on the releases tab on github. (Link coming soon.) For now, please check releases tab.
 
 
 
