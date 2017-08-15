@@ -34,13 +34,13 @@ class SkyBlockManager {
         $this->plugin->getIslandManager()->createIsland($player, $generatorName);
         $server = $this->plugin->getServer();
         $island = $this->getPlayerConfig($player)->get("island");
-        $server->generateLevel($island, null, Generator::getGenerator($generatorName));
+        $server->generateLevel(SkyBlock, null, Generator::getGenerator($generatorName));
         $server->loadLevel($island);
         $this->spawnDefaultChest($island);
     }
 
     public function spawnDefaultChest($islandName) {
-        $level = $this->plugin->getServer()->getLevelByName($islandName);
+        $level = $this->plugin->getServer()->getLevelByName(SkyBlock);
         $level->setBlock(new Vector3(10, 6, 4), new Block(0, 0));
         $level->loadChunk(10, 4, true);
         /** @var Chest $chest */
