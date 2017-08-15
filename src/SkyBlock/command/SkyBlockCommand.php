@@ -53,6 +53,7 @@ class SkyBlockCommand extends Command {
                         break;
                     case "create":
 		    case "make":
+		    case "sethome":
 			if ($sender->hasPermission('sbpe.cmd.create') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
@@ -66,7 +67,7 @@ class SkyBlockCommand extends Command {
                                 if(isset($args[1])) {
                                     if($skyBlockManager->isGenerator($args[1])) {
                                         $this->plugin->getSkyBlockManager()->generateIsland($sender, $args[1]);
-                                        $this->sendMessage($sender, "§aYou successfully created a {$skyBlockManager->getGeneratorIslandName($args[1])} island!");
+                                        $this->sendMessage($sender, "§aYou successfully created a {$skyBlockManager->getGeneratorIslandName($args[1])} island and sethome to it!");
                                     }
                                     else {
                                         $this->sendMessage($sender, "§4[Error] §cThat isn't a valid SkyBlock generator!");
@@ -107,7 +108,6 @@ class SkyBlockCommand extends Command {
                         }
 				}
                         break;
-                    case "sethome":
 		    case "addhome":
 		    case "makehome":
 				if ($sender->hasPermission('sbpe.cmd.sethome') or $sender->hasPermission('sbpe')) {
@@ -339,6 +339,7 @@ class SkyBlockCommand extends Command {
                         break;
                     case "delete":
 		    case "disband":
+		    case "del":
 				if ($sender->hasPermission('sbpe.cmd.delete') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
@@ -369,6 +370,7 @@ class SkyBlockCommand extends Command {
                         break;
                     case "makeleader":
 		    case "newleader":
+		    case "transferleader":
 				if ($sender->hasPermission('sbpe.cmd.makeleader') or $sender->hasPermission('sbpe')) {
                         $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
                         if(empty($config->get("island"))) {
@@ -541,13 +543,13 @@ class SkyBlockCommand extends Command {
 			case "changelog":
 			case "clog":
 				if ($sender->hasPermission('sbpe.cmd.changelog') or $sender->hasPermission('sbpe')) {
-				$this->sendmessage($sender, "§aSkyblock §2v1.0.1 §achangelog: §bChanged /is home to an aliases command of /is go, as /is home (Original) currently doesn't work. Changed /is home permission. Added a popup timer untill the request to accept / deny a player's invite to be over.");
+				$this->sendmessage($sender, "§aSkyblock §2v1.0.2 §achangelog: §bFixed /is home. Fixed /is sethome, added it back. Added /is del to /is delete. Added /is transferleader.");
 				}
 				break;
 			case "version":
 			case "ver":	
 				if ($sender->hasPermission('sbpe.cmd.ver') or $sender->hasPermission('sbpe')) {
-				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This is the Public release of v1.0.1. Enjoy. Version: §2v1.0.1 §cWant to see what's changed in this update? Do /is changelog.");
+				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This is the Public release of v1.0.0. Enjoy. Version: §2v1.0.2 §cWant to see what's changed in this update? Do /is changelog.");
 				}
 				break;
                     case "help":
@@ -555,26 +557,25 @@ class SkyBlockCommand extends Command {
 				if ($sender->hasPermission('sbpe.cmd.help') or $sender->hasPermission('sbpe')) {
                         $commands = [
                             "§ehelp" => "§7Show skyblock command help page. §7(Aliases: §e/is ?§7)",
-                            "§ecreate" => "§7Create a new island §7(Aliases: §e/is make§7)",
+                            "§ecreate" => "§7Create a new island §7(Aliases: §e/is make, /is sethome§7)",
                             "§ego" => "§7Teleport you to your island. §7(Aliases: §e/is join, §e/is home§7)",
                             "§ekick" => "§7Kick someone from your island. (Aliases §e/is expel§7)",
                             "§elock" => "§7Lock/unlock your island, then nobody/everybody will be able to join. §7Aliases: §e/is togglelock§7)",
-                            "§esethome" => "§7Set your island home. §7(Aliases: §e/is makehome, /is addhome§7). §c(USELESS.)",
                             "§emembers" => "§7Show all members of your island. §7(Aliases: §e/is ourmembers or /is listmembers§7)",
                             "§etp" => "§7Teleport you to a island that isn't yours. §7(Aliases: §e/is tpto§7)",
                             "§einvite" => "§7Invite a player to be member of your island. §7(Aliases: §e/is ask§7)",
                             "§eaccept <player>" => "§7accept a player's island invitation. §7(Aliases: §e/is yes§7)",
 			    "§edeny <player>" => "§7Deny a player's island invitation. §7(Aliases: §e/is no or /is reject§7)",
                             "§eleave" => "§7Leave your island. §7(Aliases: §e/is quit§7)",
-                            "§edelete" => "§7Delete your island. §7(Aliases: §e/is disband§7)",
+                            "§edelete" => "§7Delete your island. §7(Aliases: §e/is disband, /is del§7)",
 			    "§eremove" => "§7Remove a player from your island. §7(Aliases: §e/is takeaway§7)",
-                            "§emakeleader" => "§7Transfer island ownership. §7(Aliases: §e/is newleader§7)",
+                            "§emakeleader" => "§7Transfer island ownership. §7(Aliases: §e/is newleader, /is transferleader§7)",
 			    "§ereset" => "§7Reset's your island. §7(Aliases: §e/is clear§7)",
 			    "§echangelog" => "§7Checks our latest change log. §7(Aliases: §e/is clog§7)",
 			    
 							"§eversion" => "§7Gets Skyblock version. §7(Aliases: §e/is ver§7)"
                         ];
-						$sender->sendMessage(TextFormat::DARK_GREEN . "-----------" . TextFormat::BOLD . TextFormat::AQUA . " [" . TextFormat::GREEN . "SkyBlockPE Help" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "-----------"); 
+						$sender->sendMessage(TextFormat::DARK_GREEN . "-----------" . TextFormat::BOLD . TextFormat::AQUA . " [" . TextFormat::GREEN . "SkyBlock Help Page" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "-----------"); 
                         foreach($commands as $command => $description) {
 			
                             $sender->sendMessage(TextFormat::AQUA . "§e/" . TextFormat::GREEN . "§eis {$command}: " . TextFormat::RESET . TextFormat::DARK_GREEN . $description);
