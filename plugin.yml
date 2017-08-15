@@ -10,7 +10,7 @@ name: SkyBlockPE
 author: Zeao
 website: Not showing due to self-leak information.
 main: SkyBlock\Main
-version: "1.0.1"
+version: "1.0.2"
 api:
 - 3.0.0-ALPHA4
 - 3.0.0-ALPHA5
@@ -19,7 +19,7 @@ api:
 
 commands:
   skyblock:
-  description: SkyBlockPE commands
+  description: SkyBlockPE commands help
   aliases: ["sb", "is", "island"]
   
   
