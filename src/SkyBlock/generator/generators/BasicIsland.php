@@ -58,7 +58,7 @@ class BasicIsland extends SkyBlockGenerator {
         return $this->settings;
     }
 
-    public function generateChunk($chunkX, $chunkZ) {
+    public function generateChunk(int $chunkX, int $chunkZ) {
         $chunk = $this->level->getChunk($chunkX, $chunkZ);
         $chunk->setGenerated();
         if ($chunkX % 20 == 0 && $chunkZ % 20 == 0) {
@@ -79,7 +79,7 @@ class BasicIsland extends SkyBlockGenerator {
         }
     }
 
-    public function populateChunk($chunkX, $chunkZ) {
+    public function populateChunk(int $chunkX, int $chunkZ) {
         //TODO: Set Biome ID?
         return;
     }
