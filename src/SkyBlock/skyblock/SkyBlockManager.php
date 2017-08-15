@@ -34,7 +34,7 @@ class SkyBlockManager {
         $this->plugin->getIslandManager()->createIsland($player, $generatorName);
         $server = $this->plugin->getServer();
         $island = $this->getPlayerConfig($player)->get("island");
-        $server->generateLevel(SkyBlock, null, Generator::getGenerator($generatorName));
+        $server->generateLevel(SkyBlock, Skyblock, Generator::getGenerator($generatorName));
         $server->loadLevel($island);
         $this->spawnDefaultChest($island);
     }
