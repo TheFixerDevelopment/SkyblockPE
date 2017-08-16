@@ -543,7 +543,7 @@ class SkyBlockCommand extends Command {
 			case "changelog":
 			case "clog":
 				if ($sender->hasPermission('sbpe.cmd.changelog') or $sender->hasPermission('sbpe')) {
-				$this->sendmessage($sender, "§aSkyblock §2v1.0.3 §achangelog: §bUpdated the usages, to make them 10x better. Fixed /is create, Bug fixes.");
+				$this->sendmessage($sender, "§aSkyblock §2v1.0.3 §achangelog: §bUpdated the usages, to make them 10x better. Fixed /is create, Fixed a random bug where /aliases would be a thing, but wouldn't do anything. Bug fixes.");
 				}
 				break;
 			case "version":
