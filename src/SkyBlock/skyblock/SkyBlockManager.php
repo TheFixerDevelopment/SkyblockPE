@@ -40,7 +40,7 @@ class SkyBlockManager {
     }
 
     public function spawnDefaultChest($islandName) {
-        $level = $this->plugin->getServer()->getLevelByName(SkyBlock);
+        $level = $this->plugin->getServer()->getLevelByName($islandname);
         $level->setBlock(new Vector3(10, 6, 4), new Block(0, 0));
         $level->loadChunk(10, 4, true);
         /** @var Chest $chest */
