@@ -24,7 +24,7 @@ class SkyBlockCommand extends Command {
         parent::__construct("skyblock", "Main SkyBlock command", "§a/skyblock (§eor /is or /sb or /island", ["sb", "is", "island"]);
     }
     public function sendMessage(Player $sender, $message) {
-        $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "SkyBlock" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
+        $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "§6Void§bSkyBlock§cPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
     }
     public function execute(CommandSender $sender, $commandLabel, array $args) {
         if($sender instanceof Player) {
@@ -46,7 +46,7 @@ class SkyBlockCommand extends Command {
                                 $this->sendMessage($sender, "§aYou were teleported to your island home succesfully");
                             }
                             else {
-                                $this->sendMessage($sender, "§4[Error] §cYou Don't have an island!!");
+                                $this->sendMessage($sender, "§4[Error] §cYou Don't have an island!");
                           	  }
                       	     }
 			}
@@ -75,7 +75,7 @@ class SkyBlockCommand extends Command {
                                 }
                                 else {
                                     $this->plugin->getSkyBlockManager()->generateIsland($sender, "basic");
-                                    $this->sendMessage($sender, "§aYou successfully created a island! §bDo §5/is go §ato go on your island!");
+                                    $this->sendMessage($sender, "§aYou successfully created a island! §7Please use: §e/is go");
                                 }
                             }
                         }
@@ -164,7 +164,7 @@ class SkyBlockCommand extends Command {
                                         }
                                     }
                                     else {
-                                        $this->sendMessage($sender, "§cUsage: /is kick <player> or /is expel <player>");
+                                        $this->sendMessage($sender, "§7Please use: /is kick §c<§7name§c> §7or /is expel §c<§7player>§c");
                                     }
                                 }
                                 else {
@@ -220,7 +220,7 @@ class SkyBlockCommand extends Command {
                                             if(empty($config->get("island"))) {
                                                 $this->plugin->getInvitationHandler()->addInvitation($sender, $player, $island);
                                                 $this->sendMessage($sender, "§aYou sent a invitation to §2{$player->getName()} §asuccesfully!");
-                                                $this->sendMessage($player, "{$sender->getName()} §ainvited you to his island! §2Do /is accept §ato accept their invite, or §2/is deny §ato deny their request. {$sender->getName()}");
+                                                $this->sendMessage($player, "{$sender->getName()} §7invited you to his island! §7Do §c/is accept §7to accept their invite, or §e/is deny §7to deny their request. §e{$sender->getName()}");
                                             }
                                             else {
                                                 $this->sendMessage($sender, "§4[Error] §cThis player is already in a island!");
@@ -231,7 +231,7 @@ class SkyBlockCommand extends Command {
                                         }
                                     }
                                     else {
-                                        $this->sendMessage($sender, "§cUsage: /is invite <player or /is ask <player>");
+                                        $this->sendMessage($sender, "§7Please use: §7/is invite §c<§7player§c> §7or /is ask §c<§7player§c>");
                                     }
                                 }
                                 else {
@@ -274,7 +274,7 @@ class SkyBlockCommand extends Command {
                             }
                         }
                         else {
-                            $this->sendMessage($sender, "§cUsage: /is accept <player> or /is yes <player>");
+                            $this->sendMessage($sender, "§7Please use: /is accept §c<§7player§c> §7or /is yes §c<§7player§c>");
                         }
 				}
                         break;
@@ -309,7 +309,7 @@ class SkyBlockCommand extends Command {
                             }
                         }
                         else {
-                            $this->sendMessage($sender, "§cUsage: /is deny <player> or /is reject <player> or /is no <player>");
+                            $this->sendMessage($sender, "§7Please use: /is deny §c<§7player§c> §7or /is reject §c<§7player§c> §7or /is no §c<§7player§c>");
                         }
 				}
                         break;
@@ -400,7 +400,7 @@ class SkyBlockCommand extends Command {
                                         }
                                     }
                                     else {
-                                        $this->sendMessage($sender, "§cUsage: /is makeleader <player> or /is newleader <player>");
+                                        $this->sendMessage($sender, "§7Please use: /is makeleader §c<§7player§c> §7or /is newleader §c<§7player§c>");
                                     }
                                 }
                                 else {
@@ -465,7 +465,7 @@ class SkyBlockCommand extends Command {
                                         }
                                     }
                                     else {
-                                        $this->sendMessage($sender, "§cUsage: /is remove <player>");
+                                        $this->sendMessage($sender, "§7Please use: /is remove §c<§7player§c> §7or /is takeaway §c<§7player§c>");
                                     }
                                 }
                                 else {
@@ -497,7 +497,7 @@ class SkyBlockCommand extends Command {
                             }
                         }
                         else {
-                            $this->sendMessage($sender, "§cUsage: /is tp <owner_name> or /is tpto <owner_name>");
+                            $this->sendMessage($sender, "§7Please use: /is tp §c<§7owner_name§c> §7or /is tpto §c<§7owner_name§c>");
                         }
 				}
                         break;
@@ -543,13 +543,13 @@ class SkyBlockCommand extends Command {
 			case "changelog":
 			case "clog":
 				if ($sender->hasPermission('sbpe.cmd.changelog') or $sender->hasPermission('sbpe')) {
-				$this->sendmessage($sender, "§aSkyblock §2v1.0.2 §achangelog: §bFixed /is home. Fixed /is sethome, added it back. Added /is del to /is delete. Added /is transferleader.");
+				$this->sendmessage($sender, "§aSkyblock §2v1.0.3 §achangelog: §bUpdated the usages, to make them 10x better. Fixed /is create, Bug fixes.");
 				}
 				break;
 			case "version":
 			case "ver":	
 				if ($sender->hasPermission('sbpe.cmd.ver') or $sender->hasPermission('sbpe')) {
-				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This is the Public release of v1.0.0. Enjoy. Version: §2v1.0.2 §cWant to see what's changed in this update? Do /is changelog.");
+				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This is the Public release of v1.0.0. Enjoy. Version: §2v1.0.3 §cWant to see what's changed in this update? Do /is changelog.");
 				}
 				break;
                     case "help":
@@ -575,7 +575,7 @@ class SkyBlockCommand extends Command {
 			    
 							"§eversion" => "§7Gets Skyblock version. §7(Aliases: §e/is ver§7)"
                         ];
-						$sender->sendMessage(TextFormat::DARK_GREEN . "-----------" . TextFormat::BOLD . TextFormat::AQUA . " [" . TextFormat::GREEN . "SkyBlock Help Page" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "-----------"); 
+						$sender->sendMessage(TextFormat::DARK_GREEN . "§2§l>>>>>>" . TextFormat::BOLD . TextFormat::AQUA . " [" . TextFormat::GREEN . "§6Void§bSkyBlock§cPE §dHelp Page" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . "§2§l<<<<<<"); 
                         foreach($commands as $command => $description) {
 			
                             $sender->sendMessage(TextFormat::AQUA . "§e/" . TextFormat::GREEN . "§eis {$command}: " . TextFormat::RESET . TextFormat::DARK_GREEN . $description);
