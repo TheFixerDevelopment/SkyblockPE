@@ -21,7 +21,7 @@ class SkyBlockCommand extends Command {
      */
     public function __construct(Main $plugin) {
         $this->plugin = $plugin;
-        parent::__construct("skyblock", "Main SkyBlock command", "§a/skyblock (§eor /is or /sb or /island", ["sb", "is", "island"]);
+        parent::__construct("skyblock", "Main SkyBlock command", "§a/skyblock (§eor /sb or /island", ["sb", "island"]);
     }
     public function sendMessage(Player $sender, $message) {
         $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "§6Void§bSkyBlock§cPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
