@@ -18,10 +18,78 @@ api:
 - 3.0.0-ALPHA7
 
 commands:
-  skyblock:
-  description: SkyBlockPE commands help
-  
-  
+  create:
+   description: Checks the plugin version
+   usage: "/is version"
+   permission: sbpe.cmd.ver
+  changelog:
+   description: Change log regarding the server.
+   usage: "/is changelog"
+   permission: sbpe.cmd.changelog
+  reset:
+   description: Reset's your island.
+   usage: "/is reset"
+   permission: sbpe.cmd.reset
+  tp:
+   description: Tp to an island.
+   usage: "/is tp"
+   permission: sbpe.command.tp
+  remove:
+   description: Remove a user.
+   usage: "/is remove'
+   permission: sbpe.cmd.remove
+  leave:
+   description: Leave the island.
+   usage: "/is leave"
+   permission: sbpe.cmd.leave
+  makeleader:
+   description: Transfer island ownership.
+   usage: "/is makeleader"
+   permission: sbpe.cmd.makeleader
+  delete:
+   description: Delete your island.
+   usage: "/is delete"
+   permission: sbpe.cmd.delete
+  members:
+   description: Get's a list of island members.
+   usage: "/is members"
+   permission: sbpe.cmd.members
+  deny:
+   description: Deny a invite request.
+   usage: "/is deny"
+   permission: sbpe.cmd.invite.deny
+  accept:
+   description: Accept's a invite request.
+   usage: "/is accept"
+   permission: sbpe.cmd.invite.accept
+  invite:
+   description: Invite a user to your island.
+   usage: "/is invite"
+   permission: sbpe.cmd.invite
+  lock:
+   description: Lock/Unlock your island.
+   usage: "/is lock"
+   permission: sbpe.cmd.lock
+  kick:
+   description: Kicks a user from your island.
+   usage: "/is kick"
+   permission: sbpe.cmd.kick
+  sethome:
+   description: Set homes on an island, (Conmand now aliased)
+   usage: "/is sethome"
+   permission: sbpe.cmd.sethome
+  tphome:
+   description: Teleports you home succesfully. (Now aliased to /is home.)
+   usage: "/is tphome"
+   permission: sbpe.cmd.tphome
+  create:
+   description: Create an island.
+   usage: "/is create"
+   permission: sbpe.cmd.create
+  go:
+   description: Teleports you to your island.
+   usage: "/is go"
+   permission: sbpe.cmd.go
 permissions:
 sbpe:
 description: Gives skyblock help.
