@@ -18,7 +18,7 @@ api:
 - 3.0.0-ALPHA7
 
 commands:
-  create:
+  version:
    description: Checks the plugin version
    usage: "/is version"
    permission: sbpe.cmd.ver
