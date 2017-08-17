@@ -36,7 +36,7 @@ commands:
    permission: sbpe.command.tp
   remove:
    description: Remove a user.
-   usage: "/is remove'
+   usage: "/is remove"
    permission: sbpe.cmd.remove
   leave:
    description: Leave the island.
