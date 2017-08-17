@@ -21,7 +21,7 @@ class SkyBlockCommand extends Command {
      */
     public function __construct(Main $plugin) {
         $this->plugin = $plugin;
-        parent::__construct("skyblock", "Main SkyBlock command", "§a/skyblock (§eor /sb or /island", ["sb", "island"]);
+        parent::__construct("skyblock", "Main SkyBlock command", "§a/skyblock (§eor /sb or /is or /island", ["sb", "is", "island"]);
     }
     public function sendMessage(Player $sender, $message) {
         $sender->sendMessage(TextFormat::AQUA . TextFormat::BOLD . "[" . TextFormat::GREEN . "§6Void§bSkyBlock§cPE" . TextFormat::AQUA . "] " . TextFormat::RESET . TextFormat::DARK_GREEN . $message);
@@ -543,13 +543,13 @@ class SkyBlockCommand extends Command {
 			case "changelog":
 			case "clog":
 				if ($sender->hasPermission('sbpe.cmd.changelog') or $sender->hasPermission('sbpe')) {
-				$this->sendmessage($sender, "§aSkyblock §2v1.0.3 §achangelog: §bUpdated the usages, to make them 10x better. Fixed /is create, Fixed a random bug where /aliases would be a thing, but wouldn't do anything. Bug fixes.");
+				$this->sendmessage($sender, "§aSkyblock §2v1.0.4 CHANGELOG: §bAdded /is aliases, /is info, /is todolist, /is faq, and /is howtoplay. §bBut bewarned that these commands currently do not function. Fixed /is");
 				}
 				break;
 			case "version":
 			case "ver":	
 				if ($sender->hasPermission('sbpe.cmd.ver') or $sender->hasPermission('sbpe')) {
-				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This is the Public release of v1.0.0. Enjoy. Version: §2v1.0.3 §cWant to see what's changed in this update? Do /is changelog.");
+				$this->sendMessage($sender, "§aSkyblock plugin by Zeao. This is the Public release of v1.0.0. Enjoy. Version: §2v1.0.4 §cWant to see what's changed in this update? Do /is changelog.");
 				}
 				break;
                     case "help":
@@ -572,6 +572,11 @@ class SkyBlockCommand extends Command {
                             "§emakeleader" => "§7Transfer island ownership. §7(Aliases: §e/is newleader, /is transferleader§7)",
 			    "§ereset" => "§7Reset's your island. §7(Aliases: §e/is clear§7)",
 			    "§echangelog" => "§7Checks our latest change log. §7(Aliases: §e/is clog§7)",
+			    "§5todolist" => "§7Checks the to-do list on this plugin. §c(COMING SOON)",
+			    "§5aliases" => "§7Checks the command aliases for an easier view. §c(COMING SOON)",
+			    "§5faq" => "§7The most asked questions regarding this plugin. §c(COMING SOON)",
+			    "§5info" => "§7Checks plugin info, such as: where this plugin's being tested, etc. §c(COMING SOON)",
+			    "§5howtoplay" => "§7Shows you how to play Skyblock. §c(COMING SOON)",
 			    
 							"§eversion" => "§7Gets Skyblock version. §7(Aliases: §e/is ver§7)"
                         ];
