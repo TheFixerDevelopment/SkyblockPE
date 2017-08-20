@@ -1,6 +1,12 @@
 # SkyBlockPE
 SkyBlock for SPOON users only.
 
+## My TEST SERVER!
+
+## Test server IP: voidskyblockpe.pocketmine.live
+Port: 19132
+Report bugs.
+
 ## We supoort the following languages:
 
 * English
