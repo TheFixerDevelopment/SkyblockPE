@@ -124,12 +124,25 @@ PARA DESARROLLADORES
 Puede cambiar SkyBlockCommand.php aquí: https://github.com/TheFixerDevelopment/SkyblockPE/blob/patch-1/src/SkyBlock/command/SkyBlockCommand.php En la línea 528, donde entra el mensaje, diciendo un mensaje real. Cambiar a su gusto. Pero no cambie nada más, a menos que usted sea un codificador profesional, y quiera cambiar algunas cosas. La razón por la que he borrado el mensaje de la versión / sb, es porque algunas personas quisieran vaciar la información, y no pensaría que esto sería ideal. Si no está de acuerdo, puede cambiarlo a su gusto. De forma predeterminada, se ha borrado, pero como he dicho, puede cambiar el "mensaje" en la línea 528.
 
 LISTA DE QUEHACERES:
-* Actualización / sb, con diferentes colores y gustos. Especialmente con / sb help. ✔
-* Actualización de todos los comandos con nuevos formatos de color en la mayoría de todos los comandos. ✔
-* Al usar / es, dará instantáneamente la página de información de ayuda. ✖
-* Añadir nuevos comandos: / island, y / es ✔
-* Añada aliases a cada comando en la página de ayuda. ✔
-* Hacer este complemento de trabajo con software de servidor aún más. ✔
+
+Añadiendo un nuevo comando: / es todolist ✖
+
+Añadir un nuevo comando: / es faq ✖
+
+Añadiendo un nuevo comando: / es howtoplay ✖
+
+Añadir nuevo comando: / es info ✖
+
+Se ha añadido un nuevo comando: / es alias ✖
+
+Arreglar / es patear correctamente. ✖
+
+Corrección / se quita correctamente. ✖
+
+Fix / es makeleader correctamente. ✖
+
+
+
 
 SOFTWARE DEL SERVIDOR COMPATIBLE PARA ESTE PLUGIN:
 * PocketMine-MP - Probado y funcionando. (Usa esta rama aquí
