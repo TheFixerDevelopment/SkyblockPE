@@ -223,7 +223,7 @@ class SkyBlockCommand extends Command {
                                                 $this->sendMessage($player, "{$sender->getName()} §7invited you to his island! §7Do §e/is accept §7to accept their invite, or §e/is deny §7to deny their request! §6Their username is §e{$sender->getName()}");
                                             }
                                             else {
-                                                $this->sendMessage($sender, "§4[Error] §cThis player is already in a island! §6Want to make sure they are? Do /is members!");
+                                                $this->sendMessage($sender, "§4[Error] §cThis player is already in someone elses island! §6They have to leave their island in order to join yours!");
                                             }
                                         }
                                         else {
