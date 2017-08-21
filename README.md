@@ -44,17 +44,21 @@ The reason why I blanked the /sb version message out, is because some people wou
 
 ## TO-DO LIST:
 
-* Updating /sb, with different colors, and liking's. Especially with /sb help. ✔
+* Adding new command: /is todolist ✖
 
-* Updating all commands with new color formats on most/all commands. ✔
+* Adding new command: /is faq ✖
 
-* When using /is, it will instantly give the help information page. ✖
+* Adding new command: /is howtoplay ✖
 
-* Add new commands: /island, and /is ✔
+* Adding new command: /is info ✖
 
-* Add aliases to each command on the help page. ✔
+* Added new command: /is aliases ✖
 
-* Make this plugin work with even more server softwares. ✔
+* Fix /is kick properly. ✖
+
+* Fix /is remove properly. ✖
+
+* Fix /is makeleader properly. ✖
 
 
 ## COMPATIBLE SERVER SOFTWARE'S FOR THIS PLUGIN:
