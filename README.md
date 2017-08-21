@@ -3,9 +3,9 @@ SkyBlock for SPOON users only.
 
 ## My TEST SERVER!
 
-## Test server IP: voidskyblockpe.pocketmine.live
+## Public Test server IP: voidskyblockpe.pocketmine.live
 Port: 19132
-Report bugs.
+Report bugs by opening an issue and telling us what went wrong or tell us what the issue is.
 
 ## We supoort the following languages:
 
@@ -184,13 +184,18 @@ SkyBlock僅適用於BETA用戶，也可用於勺子。
 為發展商
 您可以在這裡更改SkyBlockCommand.php：https://github.com/TheFixerDevelopment/SkyblockPE/blob/patch-1/src/SkyBlock/command/SkyBlockCommand.php在線528，消息進來，說一個實際的消息。改變你的喜好但是除非你是專業的編碼人員，還要改變一些事情，別改變別的東西。為什麼我將/ sb版本消息留空，是因為有些人想洩漏信息，不會認為這是理想的。不過，如果您不同意，您可以根據自己的喜好進行更改。默認情況下，它已被刪除，但正如我所說，您可以更改528行上的“消息”。
 
-待辦事項清單：
-*更新/ sb，不同的顏色和喜好。特別是/ sb幫助。 ✔
-*在大多數/所有命令上使用新的顏色格式更新所有命令。 ✔
-*使用/時，會立即給出幫助信息頁面。 ✖
-*添加新命令：/ island，和/是✔
-*在幫助頁面上的每個命令中添加aliases。 ✔
-*使這個插件可以使用更多的服務器軟件。 ✔
+待辦事項清單:
+Tiānjiā xīn mìnglìng:/ Is todolist✖
+tiānjiā xīn mìnglìng:/Shì faq✖
+tiānjiā xīn mìnglìng:/ Is howtoplay✖
+tiānjiā xīn mìnglìng:/ Is info✖
+tiānjiāle xīn mìnglìng:/ Is aliases✖
+xiūzhèng/zhèngquè tī. ✖
+Xiūfù/zhèngquè shānchú ✖
+xiūzhèng/zhèngquè de ✖
+
+
+
 
 適用於此插件的兼容服務器軟件：
 * PocketMine-MP  - 測試和工作。 （在這裡使用這個分支
@@ -233,12 +238,14 @@ Pro vývojáře
 Můžete změnit SkyBlockCommand.php zde: https://github.com/TheFixerDevelopment/SkyblockPE/blob/patch-1/src/SkyBlock/command/SkyBlockCommand.php Na řádku 528, kde je zpráva přijata, řečeno aktuální zpráva. Změňte ji podle svých představ. Ale neměňte nic jiného, ​​pokud nejste profesionální kodér a chcete změnit několik věcí. Důvodem, proč jsem vynechal / sb verze zprávy, je, že někteří lidé by chtěli uniknout informace, a nebude si myslet, že by to bylo ideální. Pokud však nesouhlasíte, můžete ji změnit podle svých představ. Ve výchozím nastavení je vynechána, ale jak jsem již řekl, můžete změnit "zprávu" na řádku 528.
 
 SEZNAM ÚKOLŮ:
-* Aktualizace / sb, s různými barvami a oblíbenými. Zvláště s / sb help. ✔
-* Aktualizace všech příkazů s novými barevnými formáty pro většinu / všechny příkazy. ✔
-* Při použití / is, okamžitě se zobrazí stránka nápovědy. ✖
-* Přidejte nové příkazy: / island, a / je ✔
-* Přidejte aliases na každý příkaz na stránce nápovědy. ✔
-* Vytvořte tento plugin pomocí ještě více serverových softwarů. ✔
+* Přidání nového příkazu: / is todolist ✖
+* Přidání nového příkazu: / is faq ✖
+* Přidání nového příkazu: / is howtoplay ✖
+* Přidání nového příkazu: / je info ✖
+* Přidáno nové příkazy: / jsou aliasy ✖
+* Fix / je správně kop. ✖
+* Fix / je správně odstraněn. ✖
+* Fix / je makeleader správně. ✖
 
 SOFTWARE KOMPATIBILNÍHO SERVERU PRO TOMTO PLUGIN:
 * PocketMine-MP - testováno a pracuje. (Použijte tuto větev zde
