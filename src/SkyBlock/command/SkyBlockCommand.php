@@ -386,8 +386,8 @@ class SkyBlockCommand extends Command {
                                             $playerConfig = $this->plugin->getSkyBlockManager()->getPlayerConfig($player);
                                             $playerIsland = $this->plugin->getIslandManager()->getOnlineIsland($playerConfig->get("island"));
                                             if($island == $playerIsland) {
-                                                $island->setOwnerName($player);
-                                                $island->addPlayer($player);
+                                                $island->setOwnerName($player->getName();
+                                                $island->addPlayer($player->getName();
                                                 $this->sendMessage($sender, "§aYou have set the ownership to §2{$player->getName()} §asuccesfully!");
                                                 $this->sendMessage($player, "§aYou are now the Ownership of your island, by §2{$sender->getName()}!");
                                             }
@@ -443,7 +443,7 @@ class SkyBlockCommand extends Command {
                     case "remove":
 		    case "takeaway":
 				if ($sender->hasPermission('sbpe.cmd.remove') or $sender->hasPermission('sbpe')) {
-                        $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($sender);
+                        $config = $this->plugin->getSkyBlockManager()->getPlayerConfig($player);
                         if(empty($config->get("island"))) {
                             $this->sendMessage($sender, "§4[Error] §cYou must be in a island to remove a user!");
                         }
